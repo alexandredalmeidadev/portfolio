@@ -1,21 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
-import { ComponentPropsWithoutRef } from "react";
+import { Code } from "./Code";
 import { Section } from "./Section";
-import { cn } from "@/lib/utils";
 import { FacebookIcon } from "./icons/FacebookIcon";
 import Link from "next/link";
-
-const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {
-  return (
-    <span
-      className={cn(
-        "bg-accent/30 font-mono border hover:bg-accent/50 transition-colors border-accent px-1 py-0.5 p-1 text-primary rounded-sm",
-        className
-      )}
-      {...props}
-    ></span>
-  );
-};
+import Image from "next/image";
 
 export const Hero = () => {
   return (
@@ -33,24 +20,28 @@ export const Hero = () => {
               <FacebookIcon size={12} className="inline" />
               Facebook
             </Code>
-            , currently working at{" "}
-            <Link href="">
-              <Code className="inline-flex items-center gap-1">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Benin.svg/langfr-250px-Flag_of_Benin.svg.png"
-                  style={{ width: 16, height: "auto" }}
-                  alt="benin flag"
-                />{" "}
-                Codeline
-              </Code>
-            </Link>
+          </Link>
+          , currently working at{" "}
+          <Link href="https://codeline.bj">
+            <Code className="inline-flex items-center gap-1">
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Benin.svg/langfr-250px-Flag_of_Benin.svg.png"
+                width={16}
+                height={12}
+                className="inline"
+                alt="benin flag"
+              />{" "}
+              Codeline
+            </Code>
           </Link>
         </p>
       </div>
       <div className="flex-2 max-md:m-auto ml-auto">
-        <img
+        <Image
           src="https://avatars.githubusercontent.com/u/43719341?v=4"
-          className="w-full h-auto max-w-xs max-md:w-56"
+          width={256}
+          height={256}
+          className="w-full h-auto max-w-xs max-md:w-56 rounded-full object-cover"
           alt="alexandre picture"
         />
       </div>
