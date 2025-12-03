@@ -12,7 +12,7 @@ export const ContactCard = (props: {
   className?: string
 }) => {
   const CardContent = (
-    <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors">
+    <Card className="p-3 glass glass-hover transition-all duration-300 hover:scale-105">
       <div className="flex items-center gap-4">
         <div className="relative w-10 h-10">
           <Image
@@ -37,7 +37,7 @@ export const ContactCard = (props: {
           <p className="text-xs text-muted-foreground">{props.description}</p>
         </div>
         <ArrowUpRight
-          className="hover:translate-x-1 hover:-translate-y-1 transition-transform"
+          className="text-primary hover:text-primary-foreground hover:translate-x-1 hover:-translate-y-1 transition-all duration-300"
           size={16}
         />
       </div>

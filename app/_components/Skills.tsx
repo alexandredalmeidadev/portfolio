@@ -13,11 +13,11 @@ export const Skills = () => {
         I love working on...
       </h2>
       <div className="flex max-md:flex-col gap-4">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 glass p-4 rounded-xl glass-hover transition-all duration-300 flex-1">
           <NextJsLogo
             size={42}
           />
-          <h3 className="text-2xl font-semibold tracking-tight">
+          <h3 className="text-2xl font-semibold tracking-tight glass-text">
             NextJs
           </h3>
           <p className="text-sm text-muted-foreground">
@@ -26,12 +26,12 @@ export const Skills = () => {
           </p>
         </div>
 
-         <div className="flex flex-col gap-2">
+         <div className="flex flex-col gap-2 glass p-4 rounded-xl glass-hover transition-all duration-300 flex-1">
           <CSharpLogo
             size={42}
             className="text-primary"
           />
-          <h3 className="text-2xl font-semibold tracking-tight">
+          <h3 className="text-2xl font-semibold tracking-tight glass-text">
             C# ASP.NET
           </h3>
           <p className="text-sm text-muted-foreground">
@@ -40,10 +40,10 @@ export const Skills = () => {
           </p>
         </div>
 
-        
-         <div className="flex flex-col gap-2">
+
+         <div className="flex flex-col gap-2 glass p-4 rounded-xl glass-hover transition-all duration-300 flex-1">
           <AiLogo size={42} className="text-primary" />
-          <h3 className="text-2xl font-semibold tracking-tight">
+          <h3 className="text-2xl font-semibold tracking-tight glass-text">
             AI Integration
           </h3>
           <p className="text-sm text-muted-foreground">

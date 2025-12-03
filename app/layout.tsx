@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Anek_Telugu } from "next/font/google";
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
+import { AnimatedBackground } from "./_components/AnimatedBackground";
 import "./globals.css";
 
 const AnekTelugu = Anek_Telugu({
@@ -24,7 +25,10 @@ export default function RootLayout({
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} ${AnekTelugu.variable} antialiased h-full`}
       >
-        {children}
+        <AnimatedBackground />
+        <div className="relative z-10">
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -7,11 +7,11 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     <Section className="flex max-lg:flex-col items-start gap-4">
-      <div className="flex-3 w-full flex flex-col gap-2">
-        <h2 className="font-caption font-bold text-5xl text-primary">
+      <div className="flex-3 w-full flex flex-col gap-2 glass p-6 rounded-2xl">
+        <h2 className="font-caption font-bold text-5xl text-primary glass-text">
           Alexandre dALMEIDA
         </h2>
-        <h3 className="text-3xl font-caption">Developpeur web et createur</h3>
+        <h3 className="text-3xl font-caption glass-text">Developpeur web et createur</h3>
 
         <p className="text-base">
           I love creating content on{" "}
@@ -37,13 +37,16 @@ export const Hero = () => {
         </p>
       </div>
       <div className="flex-2 max-md:m-auto ml-auto">
-        <Image
-          src="https://avatars.githubusercontent.com/u/43719341?v=4"
-          width={256}
-          height={256}
-          className="w-full h-auto max-w-xs max-md:w-56 rounded-full object-cover"
-          alt="alexandre picture"
-        />
+        <div className="relative">
+          <div className="absolute inset-0 glass-glow rounded-full blur-xl opacity-50"></div>
+          <Image
+            src="https://avatars.githubusercontent.com/u/43719341?v=4"
+            width={256}
+            height={256}
+            className="w-full h-auto max-w-xs max-md:w-56 rounded-full object-cover relative z-10 glass p-1 glass-hover transition-all duration-300"
+            alt="alexandre picture"
+          />
+        </div>
       </div>
     </Section>
   );
