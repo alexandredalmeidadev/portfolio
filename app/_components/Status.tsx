@@ -16,8 +16,8 @@ export const Status = () => {
   return (
     <Section className="flex max-md:flex-col items-stretch gap-4">
       <div className="flex-3 w-full">
-        <Card className="w-full h-full p-4 flex flex-col gap-2">
-          <p className="text-lg text-muted-foreground">Side, fun projects.</p>
+        <Card className="w-full h-full p-4 flex flex-col gap-2 glass glass-hover transition-all duration-300">
+          <p className="text-lg text-muted-foreground glass-text">Side, fun projects.</p>
           <div className="flex flex-col gap-4">
             {SIDE_PROJECTS.map((project, index) => (
               <SideProject
@@ -33,16 +33,16 @@ export const Status = () => {
       </div>
 
       <div className="flex-2 w-full h-full flex flex-col gap-4">
-        <Card className="flex-1 p-4">
-          <p className="text-lg text-muted-foreground">Work</p>
+        <Card className="flex-1 p-4 glass glass-hover transition-all duration-300">
+          <p className="text-lg text-muted-foreground glass-text">Work</p>
           <div className="flex flex-col gap-4">
             {WORKS.map((work, index) => (
               <Work key={index} {...work} />
             ))}
           </div>
         </Card>
-        <Card className="p-4">
-          <p className="text-lg text-muted-foreground">Contact me</p>
+        <Card className="p-4 glass glass-hover transition-all duration-300">
+          <p className="text-lg text-muted-foreground glass-text">Contact me</p>
           <div className="flex flex-col gap-2">
             <ContactCard
               url="https://facebook.com/818060218057710"
