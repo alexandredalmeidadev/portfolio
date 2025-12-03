@@ -1,6 +1,7 @@
 import { Code } from "./Code";
 import { Section } from "./Section";
 import { FacebookIcon } from "./icons/FacebookIcon";
+import { CVDownloadButton } from "./CVDownloadButton";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -35,6 +36,10 @@ export const Hero = () => {
             </Code>
           </Link>
         </p>
+
+        <div className="mt-4">
+          <CVDownloadButton />
+        </div>
       </div>
       <div className="flex-2 max-md:m-auto ml-auto">
         <div className="relative">
