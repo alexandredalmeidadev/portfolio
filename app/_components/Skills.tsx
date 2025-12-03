@@ -41,7 +41,7 @@ export const Skills = () => {
         </div>
 
         
-         <div className="flex flex-col gap-2 flex-1">
+         <div className="flex flex-col gap-2">
           <AiLogo size={42} className="text-primary" />
           <h3 className="text-2xl font-semibold tracking-tight">
             AI Integration

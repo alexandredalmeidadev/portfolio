@@ -32,7 +32,7 @@ export const ContactCard = (props: {
         </div>
         <div className="flex-1">
           <div className="flex items-center gap-2">
-            <p className="text-lg font-semibold">{props.name}</p>
+            <p className="text-lg font-semibold truncate">{props.name}</p>
           </div>
           <p className="text-xs text-muted-foreground">{props.description}</p>
         </div>

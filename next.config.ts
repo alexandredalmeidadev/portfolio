@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
       'cdn-icons-png.flaticon.com',
       'www.01net.com',
       'www.linkedin.com',
+      'cdn2.downdetector.com',
     ],
   },
 };

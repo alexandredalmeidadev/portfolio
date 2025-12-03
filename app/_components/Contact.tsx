@@ -15,22 +15,25 @@ export const Contact = () => {
       </h2>
       <div className="flex max-md:flex-col w-full gap-4">
         <ContactCard
+          className="basis-1/3"
           url="https://facebook.com/818060218057710"
-          name="@alexandredalmeida"
+          name="@alexandre"
           image="https://avatars.githubusercontent.com/u/43719341?v=4"
           mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/1028px-Logo_de_Facebook.png"
           description="5'000"
         />
         <ContactCard
+          className="basis-1/3"
           url="https://www.linkedin.com/in/alexandre-valery-dalmeida/"
-          name="@alexandredalmeida"
+          name="@alexandre"
           image="https://avatars.githubusercontent.com/u/43719341?v=4"
           mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
           description="1'000"
         />
         <ContactCard
+          className="basis-1/3"
           name="alexandrepvdalmeida@gmail.com"
-          image="https://www.01net.com/app/uploads/2022/02/MEA-Gmail.jpg"
+          image="https://cdn2.downdetector.com/static/uploads/logo/gmail_logo_2Cns2We.jpeg"
           mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/0/7c/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
           description="Email me for any inquiries."
           url="mailto:alexandrepvdalmeida@gmail.com"
