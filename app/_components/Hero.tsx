@@ -4,6 +4,7 @@ import { FacebookIcon } from "./icons/FacebookIcon";
 import { CVDownloadButton } from "./CVDownloadButton";
 import Link from "next/link";
 import Image from "next/image";
+import { BitcoinIcon } from "./icons/BitcoinIcon";
 
 export const Hero = () => {
   return (
@@ -12,17 +13,33 @@ export const Hero = () => {
         <h2 className="font-caption font-bold text-5xl text-primary glass-text">
           Alexandre dALMEIDA
         </h2>
-        <h3 className="text-3xl font-caption glass-text">Developpeur web et createur</h3>
+        <h3 className="text-2xl font-caption glass-text">
+          Développeur web spécialisé en applications métiers et SaaS
+        </h3>
 
         <p className="text-base">
-          I love creating content on{" "}
+          J&apos;aide les entreprises à digitaliser leurs processus et à bâtir
+          des outils performants, tout en créant du contenu autour de la
+          technologie et de l&apos;écosystème{" "}
+          <Link href="https://facebook.com/818060218057710">
+            <Code className="inline-flex items-center gap-1">
+              <BitcoinIcon size={12} className="inline" />
+              Bitcoin
+            </Code>
+          </Link>
+          .{" "}
+          {/* <Link href="https://facebook.com/818060218057710">
+            <Code className="inline-flex items-center gap-1">
+              <FacebookIcon size={12} className="inline" />
+            </Code>
+          </Link>
+          ,{" "}
           <Link href="https://facebook.com/818060218057710">
             <Code className="inline-flex items-center gap-1">
               <FacebookIcon size={12} className="inline" />
-              Facebook
             </Code>
-          </Link>
-          , currently working at{" "}
+          </Link> */}
+          Vie au{" "}
           <Link href="https://codeline.bj">
             <Code className="inline-flex items-center gap-1">
               <Image
@@ -32,7 +49,7 @@ export const Hero = () => {
                 className="inline"
                 alt="benin flag"
               />{" "}
-              Codeline
+              Bénin
             </Code>
           </Link>
         </p>
