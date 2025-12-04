@@ -8,7 +8,7 @@ import { AiLogo } from "./icons/AiLogo";
 export const Skills = () => {
   return (
     <Section className="flex flex-col items-start gap-4">
-      <Badge variant={"outline"}>Skills</Badge>
+      <Badge variant={"outline"}>Compétences</Badge>
       <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
         I love working on...
       </h2>

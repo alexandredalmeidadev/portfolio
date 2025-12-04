@@ -34,7 +34,7 @@ export const Status = () => {
 
       <div className="flex-2 w-full h-full flex flex-col gap-4">
         <Card className="flex-1 p-4 glass glass-hover transition-all duration-300">
-          <p className="text-lg text-muted-foreground glass-text">Work</p>
+          <p className="text-lg text-muted-foreground glass-text">Travail</p>
           <div className="flex flex-col gap-4">
             {WORKS.map((work, index) => (
               <Work key={index} {...work} />
@@ -42,7 +42,7 @@ export const Status = () => {
           </div>
         </Card>
         <Card className="p-4 glass glass-hover transition-all duration-300">
-          <p className="text-lg text-muted-foreground glass-text">Contact me</p>
+          <p className="text-lg text-muted-foreground glass-text">Contact</p>
           <div className="flex flex-col gap-2">
             <ContactCard
               url="https://facebook.com/818060218057710"
@@ -106,25 +106,25 @@ const SIDE_PROJECTS: SideProjectProps[] = [
 
 const WORKS: WorkProps[] = [
   {
-    image: "https://cdn-icons-png.flaticon.com/512/174/174854.png",
-    title: "SaaS Project Alpha",
-    role: "Full-Stack Developer",
-    date: "2024",
-    url: "https://example.com",
+    image: "/OREBTECH.PNG",
+    title: "OREBTECH",
+    role: "Fondateur",
+    date: "2025-Présent",
+    url: "",
   },
   {
-    image: "https://cdn-icons-png.flaticon.com/512/1126/1126012.png",
-    title: "E-Commerce Platform",
-    role: "Frontend Developer",
-    date: "2023",
-    url: "https://example.com",
+    image: "/CultureWebLogo.PNG",
+    title: "CultureWeb",
+    role: "Développeur web",
+    date: "2024-2025",
+    url: "http://cultureweb.net",
     freelance: true,
   },
   {
-    image: "https://cdn-icons-png.flaticon.com/512/3002/3002719.png",
-    title: "Mobile App",
-    role: "React Native Developer",
-    date: "2023",
-    url: "https://example.com",
+    image: "https://media.licdn.com/dms/image/v2/C4E0BAQFu-mygojbCnw/company-logo_200_200/company-logo_200_200/0/1631312905539?e=2147483647&v=beta&t=vBGlHukxFWlAzI8P5JsW9trERiOn2G-Ajt6yD96wSFU",
+    title: "SimpleIT",
+    role: "Développeur web ASP.NET",
+    date: "2023-2024",
+    url: "https://www.simpleit.bj",
   },
 ];
