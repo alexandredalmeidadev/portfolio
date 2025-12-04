@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
       'www.01net.com',
       'www.linkedin.com',
       'cdn2.downdetector.com',
+      'ssl.gstatic.com',
+      'media.licdn.com',
     ],
   },
 };

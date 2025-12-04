@@ -20,8 +20,8 @@ export const BitcoinIcon = (
           y2="99.9898856%"
           id="linearGradient-1"
         >
-          <stop stop-color="#F9AA4B" offset="0%"></stop>
-          <stop stop-color="#F7931A" offset="100%"></stop>
+          <stop stopColor="#F9AA4B" offset="0%" />
+          <stop stopColor="#F7931A" offset="100%" />
         </linearGradient>
       </defs>
       <g>

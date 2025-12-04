@@ -34,7 +34,7 @@ export const Contact = () => {
           className="basis-1/3"
           name="alexandrepvdalmeida@gmail.com"
           image="https://cdn2.downdetector.com/static/uploads/logo/gmail_logo_2Cns2We.jpeg"
-          mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/0/7c/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+          mediumImage="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
           description="Email me for any inquiries."
           url="mailto:alexandrepvdalmeida@gmail.com"
         />
