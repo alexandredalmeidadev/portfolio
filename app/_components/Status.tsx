@@ -106,7 +106,7 @@ const SIDE_PROJECTS: SideProjectProps[] = [
 
 const WORKS: WorkProps[] = [
   {
-    image: "/OREBTECH.PNG",
+    image: "/OREBTECH.png",
     title: "OREBTECH",
     role: "Fondateur",
     date: "2025-Présent",
