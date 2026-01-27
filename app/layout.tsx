@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark h-full">
+    <html lang="fr" className="dark h-full" suppressHydrationWarning>
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} ${AnekTelugu.variable} antialiased h-full`}
       >

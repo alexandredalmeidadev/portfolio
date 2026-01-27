@@ -9,18 +9,18 @@ import { ContactCard } from "./ContactCard";
 export const Contact = () => {
   return (
     <Section className="flex flex-col items-start gap-4">
-      <Badge variant={"outline"}>Contact me</Badge>
+      <Badge variant={"outline"}>Contactez-moi</Badge>
       <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-        I will be happy to work with you
+        Je serai ravi de travailler avec vous
       </h2>
       <div className="flex max-md:flex-col w-full gap-4">
         <ContactCard
           className="basis-1/3"
-          url="https://facebook.com/818060218057710"
-          name="@alexandre"
+          url="https://wa.me/2290196007981"
+          name="WhatsApp Business"
           image="https://avatars.githubusercontent.com/u/43719341?v=4"
-          mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/1028px-Logo_de_Facebook.png"
-          description="5'000"
+          mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png"
+          description="+229 01 96 00 79 81"
         />
         <ContactCard
           className="basis-1/3"
@@ -35,7 +35,7 @@ export const Contact = () => {
           name="alexandrepvdalmeida@gmail.com"
           image="https://cdn2.downdetector.com/static/uploads/logo/gmail_logo_2Cns2We.jpeg"
           mediumImage="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
-          description="Email me for any inquiries."
+          description="Envoyez-moi un email pour toute demande."
           url="mailto:alexandrepvdalmeida@gmail.com"
         />
       </div>

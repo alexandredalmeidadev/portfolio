@@ -14,12 +14,13 @@ export const Hero = () => {
           Alexandre dALMEIDA
         </h2>
         <h3 className="text-2xl font-caption glass-text">
-          Développeur web spécialisé en applications métiers et SaaS
+          {/* Développeur web spécialisé en applications métiers et SaaS */}
+          Développeur fullstack orienté Business & Automation (IA, SaaS, Automatisation & CRM)
         </h3>
 
         <p className="text-base">
-          J&apos;aide les entreprises à digitaliser leurs processus et à bâtir
-          des outils performants, tout en créant du contenu autour de la
+          J&apos;aide les entreprises à créer des applications modernes et à 
+          automatiser leurs processus pour gagner du temps et de l'argent, tout en créant du contenu autour de la
           technologie et de l&apos;écosystème{" "}
           <Link href="https://facebook.com/818060218057710">
             <Code className="inline-flex items-center gap-1">

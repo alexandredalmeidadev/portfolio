@@ -44,30 +44,32 @@
 }
 
 :root {
+  /* Dark theme colors */
   --background: 229 27% 8%;
-  --foreground: 232 28% 79%;
+  --foreground: 0 0% 95%;
   --muted: 229 12% 15%;
-  --muted-foreground: 229 12% 65%;
+  --muted-foreground: 0 0% 70%;
   --popover: 229 27% 5%;
-  --popover-foreground: 232 28% 89%;
+  --popover-foreground: 0 0% 95%;
   --card: 229 27% 6%;
-  --card-foreground: 232 28% 84%;
+  --card-foreground: 0 0% 95%;
   --border: 229 17% 13%;
   --input: 229 17% 16%;
   --primary: 174 42% 65%;
   --primary-foreground: 174 42% 5%;
   --secondary: 174 30% 25%;
-  --secondary-foreground: 174 30% 85%;
+  --secondary-foreground: 0 0% 95%;
   --accent: 229 27% 23%;
-  --accent-foreground: 229 27% 83%;
+  --accent-foreground: 0 0% 95%;
   --destructive: 2 93% 47%;
   --destructive-foreground: 0 0% 100%;
   --ring: 174 42% 65%;
-  --chart-1: 174 42% 65%;
-  --chart-2: 174 30% 25%;
-  --chart-3: 229 27% 23%;
-  --chart-4: 174 30% 28%;
-  --chart-5: 174 45% 65%;
+  --chart-1: 221 83% 53%;
+  --chart-2: 212 95% 68%;
+  --chart-3: 216 34% 96%;
+  --chart-4: 210 40% 96%;
+  --chart-5: 262 83% 58%;
+
   --radius: 0.5rem;
   --sidebar: var(--background);
   --sidebar-foreground: var(--foreground);
@@ -80,27 +82,29 @@
 }
 
 :root {
-  --glass-bg: rgba(15, 23, 42, 0.5);
-  --glass-border: rgba(148, 163, 184, 0.1);
-  --glass-accent: rgba(99, 102, 241, 0.2);
-  --glass-glow: rgba(99, 102, 241, 0.15);
+  --glass-bg: rgba(15, 23, 42, 0.15);
+  --glass-border: rgba(148, 163, 184, 0.05);
+  --glass-accent: rgba(99, 102, 241, 0.08);
+  --glass-glow: rgba(99, 102, 241, 0.05);
   --glass-blur: blur(16px);
   --glass-blur-lg: blur(24px);
-  --glass-shadows: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --glass-shadows: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
+
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-  html.dark, html {
-    background-color: hsl(229 27% 8%);
-    color: hsl(232 28% 79%);
+
+  html {
+    color-scheme: dark;
   }
+
   body {
     @apply bg-background text-foreground;
     background-color: hsl(229 27% 8%);
-    color: hsl(232 28% 79%);
+    color: hsl(0 0% 95%);
   }
 }
 
@@ -131,8 +135,8 @@
   }
 
   .glass-hover:hover {
-    background: rgba(99, 102, 241, 0.1);
-    border: 1px solid rgba(99, 102, 241, 0.3);
+    background: rgba(99, 102, 241, 0.05);
+    border: 1px solid rgba(99, 102, 241, 0.15);
     transform: translateY(-2px);
     transition: all 0.3s ease;
   }
@@ -140,4 +144,14 @@
   .glass-text {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+
 }

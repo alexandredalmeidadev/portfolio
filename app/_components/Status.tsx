@@ -1,3 +1,6 @@
+"use client";
+// Force recompilation - contribution feature
+
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
 import { SideProject, SideProjectProps } from "./SideProject";
@@ -6,10 +9,12 @@ import { ContactCard } from "./ContactCard";
 import {
   ALargeSmall,
   Code,
+  Globe,
   MessageCircle,
   Rss,
   StickyNote,
   Weight,
+  Youtube,
 } from "lucide-react";
 
 export const Status = () => {
@@ -45,11 +50,11 @@ export const Status = () => {
           <p className="text-lg text-muted-foreground glass-text">Contact</p>
           <div className="flex flex-col gap-2">
             <ContactCard
-              url="https://facebook.com/818060218057710"
-              name="@alexandredalmeida"
+              url="https://wa.me/2290196007981"
+              name="WhatsApp Business"
               image="https://avatars.githubusercontent.com/u/43719341?v=4"
-              mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo_de_Facebook.png/1028px-Logo_de_Facebook.png"
-              description="5'000"
+              mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png"
+              description="+229 01 96 00 79 81"
             />
             <ContactCard
               url="https://www.linkedin.com/in/alexandre-valery-dalmeida/"
@@ -67,41 +72,42 @@ export const Status = () => {
 
 const SIDE_PROJECTS: SideProjectProps[] = [
   {
-    Logo: Code,
-    title: "Codeline",
-    description: "Digital agency platform",
-    url: "https://codeline.bj",
+    Logo: Globe,
+    title: "GestiPro",
+    description: "Solution complète de gestion : ventes, stock, caisses & factures",
+    url: "https://gestipro-omega.vercel.app/",
   },
   {
-    Logo: StickyNote,
-    title: "PowerNote",
-    description: "Advanced note-taking app",
-    url: "https://example.com",
+    Logo: Youtube,
+    title: "Goshen",
+    description: "SaaS de gestion agricole : production, transformation, stock, ventes & rapports automatisés",
+    url: "http://alexandrepv-001-site1.rtempurl.com",
   },
   {
     Logo: Rss,
-    title: "PowerPost",
-    description: "Social media management tool",
-    url: "https://example.com",
+    title: "Juridixio",
+    description: "Plateforme juridique IA : génération de documents légaux & assistance OHADA",
+    url: "https://juridixio-two.vercel.app/",
+    contribution: "Amélioration de l'intégration de l'intelligence artificielle et des services IA sur la plateforme. Intégration complète du système de paiement pour permettre les transactions sécurisées.",
   },
   {
     Logo: MessageCircle,
-    title: "ChatHub",
-    description: "Real-time messaging platform",
+    title: "Afrilia",
+    description: "Plateforme de messagerie en temps réel",
     url: "https://example.com",
   },
   {
     Logo: Weight,
     title: "FitTracker",
-    description: "Fitness tracking application",
+    description: "Application de suivi de fitness",
     url: "https://example.com",
   },
-  {
-    Logo: ALargeSmall,
-    title: "AI Writer",
-    description: "AI-powered content generator",
-    url: "https://example.com",
-  },
+  // {
+  //   Logo: ALargeSmall,
+  //   title: "AI Writer",
+  //   description: "Générateur de contenu alimenté par IA",
+  //   url: "https://example.com",
+  // },
 ];
 
 const WORKS: WorkProps[] = [

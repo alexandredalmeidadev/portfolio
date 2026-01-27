@@ -39,8 +39,8 @@ export const AnimatedBackground = () => {
         y: Math.random() * canvas.height,
         vx: (Math.random() - 0.5) * 0.5,
         vy: (Math.random() - 0.5) * 0.5,
-        size: Math.random() * 3 + 1,
-        opacity: Math.random() * 0.5 + 0.2
+        size: Math.random() * 4 + 2,
+        opacity: Math.random() * 0.6 + 0.3
       });
     }
 
@@ -61,8 +61,12 @@ export const AnimatedBackground = () => {
         // Draw particle
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(99, 102, 241, ${particle.opacity})`;
+        // Use a brighter cyan/blue color for better visibility
+        ctx.fillStyle = `rgba(147, 197, 253, ${particle.opacity * 2})`;
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = `rgba(147, 197, 253, ${particle.opacity})`;
         ctx.fill();
+        ctx.shadowBlur = 0;
 
         // Draw connections
         particles.slice(index + 1).forEach(otherParticle => {
@@ -70,11 +74,12 @@ export const AnimatedBackground = () => {
           const dy = particle.y - otherParticle.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 150) {
+          if (distance < 200) {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(otherParticle.x, otherParticle.y);
-            ctx.strokeStyle = `rgba(99, 102, 241, ${0.1 * (1 - distance / 150)})`;
+            ctx.strokeStyle = `rgba(147, 197, 253, ${0.3 * (1 - distance / 200)})`;
+            ctx.lineWidth = 0.5;
             ctx.stroke();
           }
         });
@@ -94,7 +99,7 @@ export const AnimatedBackground = () => {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 pointer-events-none z-0"
-      style={{ opacity: 0.3 }}
+      style={{ opacity: 0.1 }}
     />
   );
 };
