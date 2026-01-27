@@ -1,9 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Section } from "./Section";
-import { NextJsLogo } from "./icons/NextjsLogo";
-import { Code } from "./Code";
-import { CSharpLogo } from "./icons/CSharpLogo";
-import { AiLogo } from "./icons/AiLogo";
+
 import { ContactCard } from "./ContactCard";
 
 export const Contact = () => {

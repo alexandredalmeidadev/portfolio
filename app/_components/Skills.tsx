@@ -51,7 +51,7 @@ export const Skills = () => {
     <Section className="flex flex-col items-start gap-4">
       <Badge variant={"outline"}>Compétences</Badge>
       <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-        J'adore travailler sur...
+        J&apos;adore travailler sur...
       </h2>
       <div 
         className="relative w-full px-12 md:px-16"
@@ -80,7 +80,7 @@ export const Skills = () => {
               NextJs
             </h3>
             <p className="text-sm text-muted-foreground">
-              Mon framework principal est <Code>Next.js</Code>. Je l'utilise aussi bien
+              Mon framework principal est <Code>Next.js</Code>. Je l&apos;utilise aussi bien
               pour le backend que pour le frontend.
             </p>
           </div>
@@ -95,7 +95,7 @@ export const Skills = () => {
             </h3>
             <p className="text-sm text-muted-foreground">
               Expert en <Code>C#</Code> et <Code>ASP.NET</Code> pour construire des
-              services backend robustes et des applications d'entreprise.
+              services backend robustes et des applications d&apos;entreprise.
             </p>
           </div>
 

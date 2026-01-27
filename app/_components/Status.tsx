@@ -7,12 +7,9 @@ import { SideProject, SideProjectProps } from "./SideProject";
 import { Work, WorkProps } from "./Work";
 import { ContactCard } from "./ContactCard";
 import {
-  ALargeSmall,
-  Code,
   Globe,
   MessageCircle,
   Rss,
-  StickyNote,
   Weight,
   Youtube,
 } from "lucide-react";

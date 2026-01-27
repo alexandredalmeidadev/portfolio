@@ -1,6 +1,6 @@
 import { Code } from "./Code";
 import { Section } from "./Section";
-import { FacebookIcon } from "./icons/FacebookIcon";
+
 import { CVDownloadButton } from "./CVDownloadButton";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,7 +20,7 @@ export const Hero = () => {
 
         <p className="text-base">
           J&apos;aide les entreprises à créer des applications modernes et à 
-          automatiser leurs processus pour gagner du temps et de l'argent, tout en créant du contenu autour de la
+          automatiser leurs processus pour gagner du temps et de l&apos;argent, tout en créant du contenu autour de la
           technologie et de l&apos;écosystème{" "}
           <Link href="https://facebook.com/818060218057710">
             <Code className="inline-flex items-center gap-1">
