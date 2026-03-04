@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    unoptimized: true,
     domains: [
       'github.com',
       'avatars.githubusercontent.com',
@@ -12,6 +13,7 @@ const nextConfig: NextConfig = {
       'cdn2.downdetector.com',
       'ssl.gstatic.com',
       'media.licdn.com',
+      'images.unsplash.com',
     ],
   },
 };

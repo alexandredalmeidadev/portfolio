@@ -1,5 +1,8 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image";
 
 export type WorkProps = {
   image: string;
@@ -14,22 +17,24 @@ export const Work = (props: WorkProps) => {
   return (
     <Link
       href={props.url}
-      className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
+      className="flex items-center gap-4 group p-2 rounded-2xl transition-all duration-300"
     >
-      <img
-        src={props.image}
-        alt={props.title}
-        className="w-10 h-10 object-contain rounded-md"
-      />
-
-      <div className="mr-auto">
-        <div className="flex items-center gap-2">
-          <p className="text-lg font-semibold">{props.title}</p>
-          {props.freelance && <Badge variant="outline">Mission</Badge>}
-        </div>
-        <p className="text-xs text-muted-foreground">{props.role}</p>
+      <div className="w-12 h-12 relative rounded-xl overflow-hidden border border-border bg-white p-2">
+        <img
+          src={props.image}
+          alt={props.title}
+          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+        />
       </div>
-      <p className="text-xs text-end text-muted-foreground">{props.date}</p>
+
+      <div className="flex-1">
+        <div className="flex items-center gap-2">
+          <p className="text-base font-bold text-foreground group-hover:text-primary transition-colors">{props.title}</p>
+          {props.freelance && <Badge variant="secondary" className="text-[10px] px-1.5 py-0 rounded-full h-4">Mission</Badge>}
+        </div>
+        <p className="text-xs text-muted-foreground font-medium">{props.role}</p>
+      </div>
+      <p className="text-xs text-muted-foreground font-semibold bg-white/50 px-2 py-1 rounded-lg">{props.date}</p>
     </Link>
   );
 };

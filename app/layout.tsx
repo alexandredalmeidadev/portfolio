@@ -21,12 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="dark h-full" suppressHydrationWarning>
+    <html lang="fr" className="light h-full" suppressHydrationWarning>
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} ${AnekTelugu.variable} antialiased h-full`}
       >
-        <AnimatedBackground />
-        <div className="relative z-10">
+        <div className="relative z-10 min-h-screen bg-white">
           {children}
         </div>
       </body>
