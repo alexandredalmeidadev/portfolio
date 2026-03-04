@@ -17,8 +17,8 @@ const SERVICES = [
     color: "bg-[hsl(var(--brand-pink))]/10 text-[hsl(var(--brand-pink))]",
   },
   {
-    title: "Intégration d&apos;IA",
-    description: "Intégrez la puissance de l&apos;Intelligence Artificielle (OpenAI) dans vos outils pour offrir une expérience utilisateur unique.",
+    title: "Intégration d'IA",
+    description: "Intégrez la puissance de l'Intelligence Artificielle (OpenAI) dans vos outils pour offrir une expérience utilisateur unique.",
     icon: Sparkles,
     color: "bg-[hsl(var(--brand-yellow))]/10 text-[hsl(var(--brand-yellow))]",
   },

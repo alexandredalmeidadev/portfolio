@@ -2,7 +2,7 @@
 
 import { Section } from "./Section";
 import { SideProject, SideProjectProps } from "./SideProject";
-import { Globe, Youtube, Rss, MessageCircle, FolderDot } from "lucide-react";
+import { FolderDot, ShoppingCart, Scale, Building2, Tractor } from "lucide-react";
 
 export const Projects = () => {
   return (
@@ -32,28 +32,28 @@ export const Projects = () => {
 
 const SIDE_PROJECTS: SideProjectProps[] = [
   {
-    Logo: Globe,
+    Logo: ShoppingCart,
     title: "GestiPro",
     description: "Solution complète de gestion : ventes, stock, caisses & factures",
     url: "https://gestipro-omega.vercel.app/",
   },
   {
-    Logo: Youtube,
-    title: "Goshen",
-    description: "SaaS de gestion agricole automatisé",
-    url: "http://alexandrepv-001-site1.rtempurl.com",
-  },
-  {
-    Logo: Rss,
+    Logo: Scale,
     title: "Juridixio",
     description: "Plateforme juridique IA : documents légaux & OHADA",
     url: "https://juridixio-two.vercel.app/",
-    contribution: "Amélioration de l'intégration de l'intelligence artificielle et des services IA sur la plateforme. Intégration complète du système de paiement pour permettre les transactions sécurisées.",
+    contribution: "Refonte et intégration des flows IA avancés.",
   },
   {
-    Logo: MessageCircle,
-    title: "Hotolia",
-    description: "Plateforme de messagerie en temps réel",
-    url: "https://example.com",
+    Logo: Building2,
+    title: "Wotelo",
+    description: "SaaS de gestion d'hôtel ou d'appartements meublés",
+    url: "https://wotelo.vercel.app/",
+  },
+  {
+    Logo: Tractor,
+    title: "Goshen",
+    description: "SaaS de gestion agricole automatisé",
+    url: "http://alexandrepv-001-site1.rtempurl.com",
   },
 ];

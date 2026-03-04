@@ -18,7 +18,7 @@ export const Status = () => {
             </div>
             <h2 className="text-5xl md:text-8xl font-black font-caption tracking-tighter leading-tight">Expériences</h2>
             <p className="text-muted-foreground text-lg md:text-xl font-medium leading-relaxed max-w-xl mt-2">
-              Depuis 2019, je conçois des <span className="text-foreground font-bold">applications d&apos;entreprise robustes</span>. Plus de 5 ans d&apos;expertise terrain en architecture et développement avec <strong className="text-[hsl(var(--brand-purple))]">ASP.NET</strong> et <strong className="text-[hsl(var(--brand-pink))]">Laravel</strong>.
+              Depuis 2019, je conçois des <span className="text-foreground font-bold">applications d&apos;entreprise robustes</span>. Plus de <span className="text-foreground font-bold underline decoration-[hsl(var(--brand-pink))] decoration-4">7 ans d&apos;expertise</span> terrain en architecture et développement de solutions complexes.
             </p>
           </div>
           
