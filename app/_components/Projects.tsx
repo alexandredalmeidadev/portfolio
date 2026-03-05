@@ -3,11 +3,15 @@
 import { Section } from "./Section";
 import { SideProject, SideProjectProps } from "./SideProject";
 import { FolderDot, ShoppingCart, Scale, Building2, Tractor } from "lucide-react";
+import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
 
 export const Projects = () => {
+  const headingRef = useScrollAnimation();
+  const gridRef = useScrollAnimation<HTMLDivElement>();
+
   return (
     <Section id="projects" className="py-24 flex flex-col gap-12">
-      <div className="flex flex-col gap-4">
+      <div ref={headingRef} className="reveal-up flex flex-col gap-4">
         <div className="flex items-center gap-2 text-[hsl(var(--brand-purple))]">
           <FolderDot size={24} />
           <span className="font-extrabold tracking-[0.2em] uppercase text-sm">Portfolio</span>
@@ -18,7 +22,7 @@ export const Projects = () => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div ref={gridRef} className="reveal-fade grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {SIDE_PROJECTS.map((project, index) => (
             <SideProject
               key={index}

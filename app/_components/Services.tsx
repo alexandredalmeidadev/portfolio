@@ -2,6 +2,7 @@
 
 import { Section } from "./Section";
 import { Smartphone, Layout, Server, Sparkles, Laptop, Workflow, BrainCircuit, Rocket } from "lucide-react";
+import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
 
 const SERVICES = [
   {
@@ -31,10 +32,13 @@ const SERVICES = [
 ];
 
 export const Services = () => {
+  const headingRef = useScrollAnimation();
+  const cardsRef = useScrollAnimation<HTMLDivElement>();
+
   return (
     <div className="purple-section bg-[hsl(var(--background))] py-32">
         <Section id="services" className="flex flex-col gap-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 items-end gap-12">
+        <div ref={headingRef} className="reveal-up grid grid-cols-1 lg:grid-cols-12 items-end gap-12">
             <div className="lg:col-span-8 flex flex-col gap-6">
                 <div className="flex items-center gap-3 text-[hsl(var(--brand-yellow))]">
                     <Sparkles size={28} />
@@ -51,7 +55,7 @@ export const Services = () => {
             </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+        <div ref={cardsRef} className="stagger-children grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
           {SERVICES.map((service, index) => (
             <div 
               key={index}

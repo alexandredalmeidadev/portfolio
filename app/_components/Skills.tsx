@@ -6,12 +6,15 @@ import { NextJsLogo } from "./icons/NextjsLogo";
 import { CSharpLogo } from "./icons/CSharpLogo";
 import { AiLogo } from "./icons/AiLogo";
 import { Sparkles, Workflow } from "lucide-react";
+import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
 
 export const Skills = () => {
+  const headingRef = useScrollAnimation();
+  const gridRef = useScrollAnimation<HTMLDivElement>();
   return (
     <div className="yellow-section bg-[hsl(var(--background))] py-32">
         <Section id="skills" className="flex flex-col gap-20">
-            <div className="flex flex-col gap-6 text-center items-center max-w-4xl mx-auto">
+            <div ref={headingRef} className="reveal-up flex flex-col gap-6 text-center items-center max-w-4xl mx-auto">
                 <div className="flex items-center gap-3 text-[hsl(var(--brand-purple))]">
                     <Sparkles size={28} />
                     <span className="font-black tracking-[0.3em] uppercase text-sm">Expertise</span>
@@ -24,7 +27,7 @@ export const Skills = () => {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div ref={gridRef} className="stagger-children grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {SKILLS_DATA.map((skill, index) => (
                     <div 
                         key={index}

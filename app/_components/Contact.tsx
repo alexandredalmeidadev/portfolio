@@ -3,11 +3,15 @@
 import { Section } from "./Section";
 import { ContactCard } from "./ContactCard";
 import { MessageSquare, Mail, Smartphone, Sparkles, BriefcaseBusiness } from "lucide-react";
+import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
 
 export const Contact = () => {
+  const headingRef = useScrollAnimation();
+  const cardsRef = useScrollAnimation<HTMLDivElement>();
+  const benefitsRef = useScrollAnimation<HTMLDivElement>();
   return (
     <Section id="contact" className="py-32 flex flex-col items-center text-center gap-20">
-      <div className="flex flex-col gap-6 max-w-4xl">
+      <div ref={headingRef} className="reveal-up flex flex-col gap-6 max-w-4xl">
         <div className="flex items-center justify-center gap-3 text-[hsl(var(--brand-pink))] mb-6">
           <MessageSquare size={28} />
           <span className="font-black tracking-[0.3em] uppercase text-sm">Contact</span>
@@ -20,7 +24,7 @@ export const Contact = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+      <div ref={cardsRef} className="reveal-fade grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
         <ContactCard
           url="https://wa.me/2290196007981"
           name="WhatsApp Business"
