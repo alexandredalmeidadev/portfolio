@@ -36,20 +36,20 @@ export const Services = () => {
   const cardsRef = useScrollAnimation<HTMLDivElement>();
 
   return (
-    <div className="purple-section bg-[hsl(var(--background))] py-32">
+    <div className="bg-zinc-50 py-32 border-y border-zinc-200">
         <Section id="services" className="flex flex-col gap-20">
         <div ref={headingRef} className="reveal-up grid grid-cols-1 lg:grid-cols-12 items-end gap-12">
             <div className="lg:col-span-8 flex flex-col gap-6">
-                <div className="flex items-center gap-3 text-[hsl(var(--brand-yellow))]">
+                <div className="flex items-center gap-3 text-[hsl(var(--brand-purple))]">
                     <Sparkles size={28} />
                     <span className="font-black tracking-[0.3em] uppercase text-sm">Solutions</span>
                 </div>
-                <h2 className="text-4xl md:text-8xl font-black font-caption tracking-tighter text-white leading-[0.9]">
-                    MES <span className="text-[hsl(var(--brand-yellow))] opacity-90">SERVICES.</span>
+                <h2 className="text-4xl md:text-8xl font-black font-caption tracking-tighter text-foreground leading-[0.9]">
+                    MES <span className="text-[hsl(var(--brand-purple))] opacity-90">SERVICES.</span>
                 </h2>
             </div>
             <div className="lg:col-span-4 pb-4">
-                <p className="text-white/70 text-xl font-medium leading-relaxed">
+                <p className="text-muted-foreground text-xl font-medium leading-relaxed">
                     De la conception à la mise en production, je vous accompagne dans chaque étape technique de votre croissance.
                 </p>
             </div>
@@ -59,14 +59,14 @@ export const Services = () => {
           {SERVICES.map((service, index) => (
             <div 
               key={index}
-              className="group p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] bg-zinc-900/50 border border-zinc-800 hover:border-primary/50 hover:bg-zinc-900 transition-all duration-500 flex flex-col gap-6"
+              className="group p-6 md:p-8 rounded-[2rem] md:rounded-[2.5rem] bg-white border-2 border-zinc-100 hover:border-[hsl(var(--brand-purple))]/40 hover:shadow-xl hover:shadow-[hsl(var(--brand-purple))]/10 transition-all duration-500 flex flex-col gap-6"
             >
               <div className={`w-14 h-14 rounded-2xl ${service.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-500`}>
                 <service.icon size={28} />
               </div>
               <div className="flex flex-col gap-2">
-                <h3 className="text-xl font-bold text-white">{service.title}</h3>
-                <p className="text-zinc-400 line-clamp-3">
+                <h3 className="text-xl font-bold text-foreground">{service.title}</h3>
+                <p className="text-muted-foreground line-clamp-3">
                   {service.description}
                 </p>
               </div>

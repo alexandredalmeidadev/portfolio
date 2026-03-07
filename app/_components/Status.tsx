@@ -28,16 +28,16 @@ export const Status = () => {
             </div>
             <h2 className="text-5xl md:text-8xl font-black font-caption tracking-tighter leading-tight">Expériences</h2>
             <p className="text-muted-foreground text-lg md:text-xl font-medium leading-relaxed max-w-xl mt-2">
-              Depuis 2019, je conçois des <span className="text-foreground font-bold">applications d&apos;entreprise robustes</span>. Plus de <span className="text-foreground font-bold underline decoration-[hsl(var(--brand-pink))] decoration-4">7 ans d&apos;expertise</span> terrain en architecture et développement de solutions complexes.
+              Depuis 2019, je conçois des <span className="text-foreground font-bold">applications d&apos;entreprise robustes</span>. Plus de <span className="text-foreground font-bold">7 ans d&apos;expertise</span> terrain en architecture et développement de solutions complexes.
             </p>
           </div>
 
           {/* === ACTUELLEMENT === */}
           <div ref={activeRef} className="reveal-up flex flex-col gap-6">
             <div className="flex items-center gap-3">
-              <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-50 border border-green-200">
-                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                <span className="text-green-700 font-black text-xs tracking-widest uppercase">Actuellement</span>
+              <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900 border border-zinc-800">
+                <div className="w-2 h-2 rounded-full bg-zinc-400 animate-pulse" />
+                <span className="text-white font-black text-xs tracking-widest uppercase">Actuellement</span>
               </div>
               <span className="text-muted-foreground text-sm font-medium">2 rôles simultanés</span>
             </div>
@@ -45,20 +45,22 @@ export const Status = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Studio Inpulsion */}
               <div className="group relative p-6 rounded-[2rem] bg-white border-2 border-zinc-100 hover:border-[hsl(var(--brand-purple))]/40 hover:shadow-xl hover:shadow-[hsl(var(--brand-purple))]/10 transition-all duration-500 flex flex-col gap-5">
-                <div className="absolute top-5 right-5 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-green-50 border border-green-100">
-                  <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                  <span className="text-[10px] font-bold text-green-600 uppercase tracking-wider">Actif</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl border border-zinc-100 bg-white p-2 flex items-center justify-center overflow-hidden shadow-sm">
+                <div className="flex items-start gap-4 h-14">
+                  <div className="w-14 h-14 rounded-2xl border border-zinc-100 bg-white p-2 flex shrink-0 items-center justify-center overflow-hidden shadow-sm">
                     <img
                       src="/studio_inpulsion_logo.png"
                       alt="Studio Inpulsion"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <div>
-                    <p className="font-black text-lg text-foreground leading-none">Studio Inpulsion</p>
+                  <div className="flex flex-col flex-1 gap-1">
+                    <div className="flex flex-wrap items-center justify-between gap-2 w-full">
+                       <p className="font-black text-lg text-foreground leading-none">Studio Inpulsion</p>
+                       <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-zinc-900 border border-zinc-800">
+                         <div className="w-1.5 h-1.5 rounded-full bg-zinc-400 animate-pulse" />
+                         <span className="text-[10px] font-bold text-white uppercase tracking-wider">Actif</span>
+                       </div>
+                    </div>
                     <p className="text-xs text-muted-foreground font-semibold mt-1">Jan. 2026 — Présent</p>
                   </div>
                 </div>
@@ -75,20 +77,22 @@ export const Status = () => {
 
               {/* OREBTECH */}
               <div className="group relative p-6 rounded-[2rem] bg-white border-2 border-zinc-100 hover:border-[hsl(var(--brand-yellow))]/60 hover:shadow-xl hover:shadow-[hsl(var(--brand-yellow))]/10 transition-all duration-500 flex flex-col gap-5">
-                <div className="absolute top-5 right-5 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-50 border border-amber-100">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--brand-yellow))] animate-pulse" />
-                  <span className="text-[10px] font-bold text-amber-600 uppercase tracking-wider">Fondateur</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl border border-zinc-100 bg-white p-2 flex items-center justify-center overflow-hidden shadow-sm">
+                <div className="flex items-start gap-4 h-14">
+                  <div className="w-14 h-14 rounded-2xl border border-zinc-100 bg-white p-2 flex shrink-0 items-center justify-center overflow-hidden shadow-sm">
                     <img
                       src="/OREBTECH.png"
                       alt="OREBTECH"
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <div>
-                    <p className="font-black text-lg text-foreground leading-none">OREBTECH</p>
+                  <div className="flex flex-col flex-1 gap-1">
+                    <div className="flex flex-wrap items-center justify-between gap-2 w-full">
+                       <p className="font-black text-lg text-foreground leading-none">OREBTECH</p>
+                       <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-50 border border-amber-100">
+                         <div className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--brand-yellow))] animate-pulse" />
+                         <span className="text-[10px] font-bold text-amber-600 uppercase tracking-wider">Fondateur</span>
+                       </div>
+                    </div>
                     <p className="text-xs text-muted-foreground font-semibold mt-1">2025 — Présent</p>
                   </div>
                 </div>
