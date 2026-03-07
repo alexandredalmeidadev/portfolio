@@ -12,7 +12,7 @@ export const Contact = () => {
   return (
     <Section id="contact" className="py-32 flex flex-col items-center text-center gap-20">
       <div ref={headingRef} className="reveal-up flex flex-col gap-6 max-w-4xl">
-        <div className="flex items-center justify-center gap-3 text-[hsl(var(--brand-pink))] mb-6">
+        <div className="flex items-center justify-center gap-3 text-zinc-500 mb-6">
           <MessageSquare size={28} />
           <span className="font-black tracking-[0.3em] uppercase text-sm">Contact</span>
         </div>

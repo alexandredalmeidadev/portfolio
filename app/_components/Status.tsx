@@ -22,7 +22,7 @@ export const Status = () => {
 
           {/* Heading */}
           <div ref={headingRef} className="reveal-left flex flex-col gap-4">
-            <div className="flex items-center gap-3 text-[hsl(var(--brand-pink))]">
+            <div className="flex items-center gap-3 text-zinc-500">
               <BriefcaseBusiness size={28} />
               <span className="font-black tracking-[0.3em] uppercase text-sm">Parcours</span>
             </div>
@@ -130,7 +130,7 @@ export const Status = () => {
         {/* Contact/Sticky Side */}
         <div ref={sideRef} className="reveal-fade flex-[2] w-full flex flex-col gap-12 lg:sticky lg:top-32">
           <div className="flex flex-col gap-6">
-            <div className="flex items-center gap-2 text-primary">
+            <div className="flex items-center gap-2 text-zinc-500">
               <MessageSquare size={24} />
               <span className="font-extrabold tracking-widest uppercase text-sm">Me joindre</span>
             </div>
