@@ -58,8 +58,8 @@ export const Contact = () => {
                 <Sparkles size={36} />
               </div>
               <div className="flex flex-col gap-4">
-                <h3 className="text-3xl font-black tracking-tight">Expertise Tech</h3>
-                <p className="text-muted-foreground text-lg leading-relaxed font-semibold">Solutions robustes avec Next.js et IA générative.</p>
+                <h3 className="text-3xl font-black tracking-tight">Qualité Logicielle</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed font-semibold">Des solutions web et mobile conçues pour durer.</p>
               </div>
            </div>
 
@@ -88,8 +88,8 @@ export const Contact = () => {
                 <Smartphone size={36} />
               </div>
               <div className="flex flex-col gap-4">
-                <h3 className="text-3xl font-black tracking-tight">Express MVP</h3>
-                <p className="text-muted-foreground text-lg leading-relaxed font-semibold">Lancez votre produit en temps record.</p>
+                <h3 className="text-3xl font-black tracking-tight">Lancement Rapide</h3>
+                <p className="text-muted-foreground text-lg leading-relaxed font-semibold">Mise en ligne de votre projet en temps record.</p>
               </div>
            </div>
         </div>
