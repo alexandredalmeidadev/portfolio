@@ -17,9 +17,7 @@ export const Hero = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed animate-in fade-in slide-in-from-bottom-12 duration-700 delay-200">
-          Expert en création de <span className="text-foreground font-bold underline decoration-zinc-300 decoration-4">solutions numériques</span> (sites, applications web et mobile) boostées par l&apos;<span className="text-foreground font-bold underline decoration-zinc-300 decoration-4">Intelligence Artificielle</span>.
-          <br className="hidden md:block" />
-          J&apos;aide les entrepreneurs à transformer leurs idées en <span className="text-foreground font-bold underline decoration-zinc-300 decoration-4">produits digitaux</span> rentables et performants.
+          Développeur Full-Stack expert en <span className="text-foreground font-bold underline decoration-[hsl(var(--brand-pink))] decoration-4">Next.js</span>, <span className="text-foreground font-bold underline decoration-[hsl(var(--brand-yellow))] decoration-4">ASP.NET Core</span> et <span className="text-foreground font-bold underline decoration-[hsl(var(--brand-purple))] decoration-4">Intelligence Artificielle</span>. J&apos;aide les entrepreneurs à transformer leurs idées en produits digitaux à haut ROI.
         </p>
 
         <div className="flex max-sm:flex-col items-center gap-6 animate-in fade-in slide-in-from-bottom-16 duration-700 delay-300">
