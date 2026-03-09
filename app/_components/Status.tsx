@@ -158,8 +158,8 @@ export const Status = () => {
               Vous avez une idée de projet ou besoin d&apos;une expertise technique ? Discutons-en dès aujourd&apos;hui.
             </p>
             <a
-              href="mailto:alexandredalmeidadev@gmail.com"
-              className="flex items-center justify-between p-4 rounded-2xl bg-primary text-white font-bold group-hover:bg-primary/90 transition-colors"
+              href="mailto:alexandrepvdalmeida@gmail.com"
+              className="flex items-center justify-between p-4 rounded-2xl bg-zinc-900 text-white font-bold hover:bg-black transition-colors"
             >
               Envoyer un Email
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

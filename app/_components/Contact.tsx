@@ -42,11 +42,11 @@ export const Contact = () => {
           className="h-full"
         />
         <ContactCard
-          url="mailto:alexandredalmeidadev@gmail.com"
+          url="mailto:alexandrepvdalmeida@gmail.com"
           name="Email Professionnel"
           image="https://cdn2.downdetector.com/static/uploads/logo/gmail_logo_2Cns2We.jpeg"
           mediumImage="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
-          description="alexandredalmeidadev@gmail.com"
+          description="alexandrepvdalmeida@gmail.com"
           className="h-full"
         />
       </div>
