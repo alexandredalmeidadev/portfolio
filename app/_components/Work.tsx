@@ -19,11 +19,12 @@ export const Work = (props: WorkProps) => {
       href={props.url}
       className="flex items-center gap-4 group p-2 rounded-2xl transition-all duration-300"
     >
-      <div className="w-12 h-12 relative rounded-xl overflow-hidden border border-border bg-white p-2">
+      <div className="w-12 h-12 rounded-xl overflow-hidden border border-border bg-white p-2 flex items-center justify-center">
         <Image
           src={props.image}
           alt={`Logo ${props.title}`}
-          fill
+          width={32}
+          height={32}
           className="object-contain group-hover:scale-110 transition-transform duration-500"
         />
       </div>

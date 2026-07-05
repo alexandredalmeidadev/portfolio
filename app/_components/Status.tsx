@@ -39,7 +39,6 @@ export const Status = () => {
                 <div className="w-2 h-2 rounded-full bg-zinc-400 animate-pulse" />
                 <span className="text-white font-black text-xs tracking-widest uppercase">Actuellement</span>
               </div>
-              <span className="text-muted-foreground text-sm font-medium">2 rôles simultanés</span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -50,7 +49,8 @@ export const Status = () => {
                     <Image
                       src="/studio_inpulsion_logo.png"
                       alt="Logo Studio Inpulsion – Agence de développement web"
-                      fill
+                      width={40}
+                      height={40}
                       className="object-contain"
                     />
                   </div>
@@ -83,7 +83,8 @@ export const Status = () => {
                     <Image
                       src="/OREBTECH.png"
                       alt="Logo OREBTECH – Studio SaaS et IA"
-                      fill
+                      width={40}
+                      height={40}
                       className="object-contain"
                     />
                   </div>
