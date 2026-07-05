@@ -46,7 +46,7 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     Logo: Scale,
     title: "Juridixio",
     description: "Plateforme juridique IA : rédaction de documents légaux OHADA par RAG & LangChain — Next.js, OpenAI",
-    url: "https://juridixio-two.vercel.app/",
+    url: "https://www.juridixio.com/",
     internalUrl: "/projects/juridixio",
     contribution: "Refonte complète de l'interface et intégration des flows IA avancés (RAG, agents LLM).",
   },

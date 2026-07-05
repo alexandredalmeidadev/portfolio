@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
       "J'ai pris en charge la refonte complète de l'interface utilisateur et l'intégration des flows IA avancés : agents LLM multi-étapes, validation juridique automatique des documents générés, et système de révision interactive."
     ],
     stack: ["Next.js", "TypeScript", "LangChain", "OpenAI GPT-4", "RAG", "Pinecone", "Tailwind CSS", "Vercel"],
-    url: "https://juridixio-two.vercel.app/",
+    url: "https://www.juridixio.com/",
     category: "IA Générative",
     color: "from-purple-600 to-pink-500",
     accentColor: "text-purple-600",
