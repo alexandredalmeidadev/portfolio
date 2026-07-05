@@ -47,10 +47,11 @@ export const Status = () => {
               <div className="group relative p-6 rounded-[2rem] bg-white border-2 border-zinc-100 hover:border-[hsl(var(--brand-purple))]/40 hover:shadow-xl hover:shadow-[hsl(var(--brand-purple))]/10 transition-all duration-500 flex flex-col gap-5">
                 <div className="flex items-start gap-4 h-14">
                   <div className="w-14 h-14 rounded-2xl border border-zinc-100 bg-white p-2 flex shrink-0 items-center justify-center overflow-hidden shadow-sm">
-                    <img
+                    <Image
                       src="/studio_inpulsion_logo.png"
-                      alt="Studio Inpulsion"
-                      className="w-full h-full object-contain"
+                      alt="Logo Studio Inpulsion – Agence de développement web"
+                      fill
+                      className="object-contain"
                     />
                   </div>
                   <div className="flex flex-col flex-1 gap-1">
@@ -79,10 +80,11 @@ export const Status = () => {
               <div className="group relative p-6 rounded-[2rem] bg-white border-2 border-zinc-100 hover:border-[hsl(var(--brand-yellow))]/60 hover:shadow-xl hover:shadow-[hsl(var(--brand-yellow))]/10 transition-all duration-500 flex flex-col gap-5">
                 <div className="flex items-start gap-4 h-14">
                   <div className="w-14 h-14 rounded-2xl border border-zinc-100 bg-white p-2 flex shrink-0 items-center justify-center overflow-hidden shadow-sm">
-                    <img
+                    <Image
                       src="/OREBTECH.png"
-                      alt="OREBTECH"
-                      className="w-full h-full object-contain"
+                      alt="Logo OREBTECH – Studio SaaS et IA"
+                      fill
+                      className="object-contain"
                     />
                   </div>
                   <div className="flex flex-col flex-1 gap-1">
@@ -178,7 +180,7 @@ const PAST_WORKS: WorkProps[] = [
     title: "CultureWeb",
     role: "Développeur FullStack",
     date: "2024 - 2025",
-    url: "http://cultureweb.net",
+    url: "https://cultureweb.net",
     freelance: true,
   },
   {

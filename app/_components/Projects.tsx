@@ -38,26 +38,26 @@ const SIDE_PROJECTS: SideProjectProps[] = [
   {
     Logo: ShoppingCart,
     title: "GestiPro",
-    description: "Solution complète de gestion : ventes, stock, caisses & factures",
+    description: "SaaS de gestion commerciale sur-mesure : ventes, stocks, caisse & facturation — Next.js, Prisma, PostgreSQL",
     url: "https://gestipro-omega.vercel.app/",
   },
   {
     Logo: Scale,
     title: "Juridixio",
-    description: "Plateforme juridique IA : documents légaux & OHADA",
+    description: "Plateforme juridique IA : rédaction de documents légaux OHADA par RAG & LangChain — Next.js, OpenAI",
     url: "https://juridixio-two.vercel.app/",
-    contribution: "Refonte et intégration des flows IA avancés.",
+    contribution: "Refonte complète de l'interface et intégration des flows IA avancés (RAG, agents LLM).",
   },
   {
     Logo: Building2,
     title: "Wotelo",
-    description: "SaaS de gestion d'hôtel ou d'appartements meublés",
+    description: "SaaS de gestion hôtelière multi-tenant : réservations, chambres & appartements meublés — Next.js, ASP.NET Core",
     url: "https://wotelo.vercel.app/",
   },
   {
     Logo: Tractor,
     title: "Goshen",
-    description: "SaaS de gestion agricole automatisé",
-    url: "http://alexandrepv-001-site1.rtempurl.com",
+    description: "SaaS de gestion agricole automatisé : cultures, stocks & rapports — C# ASP.NET Core, n8n, automatisation des flux",
+    url: "https://alexandrepv-001-site1.rtempurl.com",
   },
 ];

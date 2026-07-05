@@ -17,8 +17,13 @@ export const Hero = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl leading-relaxed animate-in fade-in slide-in-from-bottom-12 duration-700 delay-200">
-          Développeur Full-Stack expert en <span className="text-foreground font-bold underline decoration-[hsl(var(--brand-pink))] decoration-4">Next.js</span>, <span className="text-foreground font-bold underline decoration-[hsl(var(--brand-yellow))] decoration-4">ASP.NET Core</span> et <span className="text-foreground font-bold underline decoration-[hsl(var(--brand-purple))] decoration-4">Intelligence Artificielle</span>. J&apos;aide les entrepreneurs à transformer leurs idées en produits digitaux à haut ROI.
+          Développeur Full-Stack freelance expert en <span className="text-foreground font-bold underline decoration-[hsl(var(--brand-pink))] decoration-4">Next.js</span>, <span className="text-foreground font-bold underline decoration-[hsl(var(--brand-yellow))] decoration-4">ASP.NET Core</span> et <span className="text-foreground font-bold underline decoration-[hsl(var(--brand-purple))] decoration-4">Intelligence Artificielle</span>. J&apos;aide les entrepreneurs à transformer leurs idées en produits digitaux à haut ROI.
         </p>
+
+        <div className="flex items-center gap-2 text-sm text-muted-foreground/70 font-medium animate-in fade-in duration-700 delay-400">
+          <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block animate-pulse" />
+          Basé au Bénin &mdash; Disponible en remote &middot; International
+        </div>
 
         <div className="flex max-sm:flex-col items-center gap-6 animate-in fade-in slide-in-from-bottom-16 duration-700 delay-300">
            <Link 
@@ -42,9 +47,8 @@ export const Hero = () => {
         <div className="relative p-2 rounded-[3.5rem] bg-zinc-100/50 border-4 border-white shadow-2xl overflow-hidden aspect-video group">
           <Image
             src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2000&q=80"
-            alt="Workspace"
+            alt="Environnement de travail d'Alexandre d'ALMEIDA, développeur Full-Stack Next.js"
             fill
-            unoptimized={true}
             className="object-cover rounded-[3rem] grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
           />
            <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 bg-white/90 backdrop-blur-sm p-3 md:p-4 rounded-[1.5rem] shadow-2xl border border-white/50 flex items-center gap-2 md:gap-3 hover:scale-105 transition-transform duration-300">

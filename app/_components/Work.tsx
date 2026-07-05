@@ -20,10 +20,11 @@ export const Work = (props: WorkProps) => {
       className="flex items-center gap-4 group p-2 rounded-2xl transition-all duration-300"
     >
       <div className="w-12 h-12 relative rounded-xl overflow-hidden border border-border bg-white p-2">
-        <img
+        <Image
           src={props.image}
-          alt={props.title}
-          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+          alt={`Logo ${props.title}`}
+          fill
+          className="object-contain group-hover:scale-110 transition-transform duration-500"
         />
       </div>
 

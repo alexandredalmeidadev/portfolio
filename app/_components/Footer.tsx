@@ -2,6 +2,7 @@
 
 import { Section } from "./Section";
 import Link from "next/link";
+import Image from "next/image";
 
 export const Footer = () => {
     return (
@@ -10,10 +11,11 @@ export const Footer = () => {
                 <div className="flex flex-col gap-4 max-md:items-center">
                     <div className="flex items-center gap-4">
                         <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[hsl(var(--brand-yellow))] shadow-lg shadow-[hsl(var(--brand-yellow))]/20">
-                            <img 
-                                src="https://avatars.githubusercontent.com/u/43719341?v=4" 
-                                alt="Alexandre" 
-                                className="object-cover w-full h-full"
+                            <Image
+                                src="https://avatars.githubusercontent.com/u/43719341?v=4"
+                                alt="Alexandre d'ALMEIDA, développeur Full-Stack"
+                                fill
+                                className="object-cover"
                             />
                         </div>
                         <span className="text-2xl font-black tracking-tight text-white">

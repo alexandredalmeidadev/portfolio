@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 import { GithubIcon } from "./icons/GithubIcon";
 import { LinkedInIcon } from "./icons/LinkedinIcon";
 
@@ -12,10 +13,11 @@ export const Header = () => {
         <div className="flex items-center">
             <Link href="/" className="flex items-center gap-3 group">
                 <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-[hsl(var(--brand-yellow))] group-hover:border-[hsl(var(--brand-pink))] transition-colors shadow-lg shadow-[hsl(var(--brand-yellow))]/20">
-                    <img 
-                        src="https://avatars.githubusercontent.com/u/43719341?v=4" 
-                        alt="Alexandre" 
-                        className="object-cover w-full h-full"
+                    <Image
+                        src="https://avatars.githubusercontent.com/u/43719341?v=4"
+                        alt="Alexandre d'ALMEIDA, développeur Full-Stack"
+                        fill
+                        className="object-cover"
                     />
                 </div>
             </Link>
