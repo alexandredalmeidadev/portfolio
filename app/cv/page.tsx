@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const CONTACT = [
   { Icon: Mail, text: "alexandrepvdalmeida@gmail.com" },
-  { Icon: Phone, text: "+229 67275846" },
+  { Icon: Phone, text: "+229 0196007981" },
   { Icon: MapPin, text: "Bénin — Disponible en remote" },
   { Icon: Globe, text: "alexandredalmeida.vercel.app" },
   { Icon: Linkedin, text: "alexandre-dalmeida-495277121" },
@@ -48,12 +48,20 @@ const EXPERIENCES = [
     ],
   },
   {
+    company: "Juridixio",
+    role: "Développeur FullStack & IA (Mission)",
+    period: "2024 — 2025",
+    bullets: [
+      "Refonte complète de l'interface utilisateur de la plateforme",
+      "Intégration des flows IA avancés : RAG, agents LLM, validation juridique",
+    ],
+  },
+  {
     company: "CultureWeb",
     role: "Développeur FullStack (Mission Freelance)",
     period: "2024 — 2025",
     bullets: [
       "Développement fullstack de solutions web clients",
-      "Refonte UI et intégration de flows IA sur Juridixio (RAG, agents LLM)",
     ],
   },
   {
