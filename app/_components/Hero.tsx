@@ -4,9 +4,7 @@ import { Section } from "./Section";
 import { CVDownloadButton } from "./CVDownloadButton";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 
 export const Hero = () => {
   return (
@@ -33,12 +31,13 @@ export const Hero = () => {
             Lancer un projet
             <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
            </Link>
-           <Link 
-            href="#projects" 
+           <Link
+            href="#projects"
             className="px-10 py-5 rounded-full bg-white border-2 border-zinc-100 text-foreground font-bold text-lg hover:bg-zinc-50 transition-all flex items-center gap-2 group"
            >
             Voir mes travaux
            </Link>
+           <CVDownloadButton />
         </div>
       </div>
 

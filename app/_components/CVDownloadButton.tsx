@@ -1,19 +1,15 @@
-import { buttonVariants } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 export const CVDownloadButton = () => {
   return (
     <Link
-      href="/CV-Alexandre-Dalmeida.pdf"
-      download="CV-Alexandre-Dalmeida.pdf"
-      className={cn(
-        buttonVariants({ variant: "outline", size: "lg" }),
-        "glass glass-hover transition-all duration-300 hover:scale-105 inline-flex items-center gap-3 text-base font-semibold glass-glow group"
-      )}
+      href="/cv"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-3 px-8 py-4 rounded-full border-2 border-zinc-200 text-foreground font-bold text-base hover:bg-zinc-50 hover:border-zinc-300 transition-all duration-300 group"
     >
-      <Download size={20} className="transition-transform duration-300 group-hover:translate-y-1" />
+      <Download size={18} className="transition-transform duration-300 group-hover:translate-y-0.5" />
       Télécharger mon CV
     </Link>
   );

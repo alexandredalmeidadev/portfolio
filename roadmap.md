@@ -305,7 +305,7 @@ Sécurité + signal de qualité pour Google.
 | 4.1 | Mots-clés dans textes | Hero, Services, Skills | Élevé | 1h | `[ ]` |
 | 4.2 | Localisation géo | Hero ou Status | Moyen | 15 min | `[x]` |
 | 4.3 | Descriptions projets | `Projects.tsx` | Moyen | 30 min | `[x]` |
-| 4.4 | Pages `/projects/[slug]` | `app/projects/` | Élevé | 3h | `[ ]` |
+| 4.4 | Pages `/projects/[slug]` | `app/projects/` | Élevé | 3h | `[x]` |
 | 4.5 | Section témoignages | Nouveau composant | Moyen | 2h | `[ ]` |
 | 5.1 | Google Search Console | — | Élevé | 30 min | `[ ]` |
 | 5.2 | Vercel Analytics | `layout.tsx` | Moyen | 10 min | `[x]` |
@@ -313,6 +313,38 @@ Sécurité + signal de qualité pour Google.
 | 6.1 | Corriger `vercel.json` | `vercel.json` | Critique | 5 min | `[x]` |
 | 6.2 | `rel="noopener"` | Header, SideProject | Faible | 10 min | `[ ]` |
 | 6.3 | Import mort AnimatedBackground | `layout.tsx` | Nul | 2 min | `[x]` |
+
+---
+
+## CV Téléchargeable — Plan d'intégration
+
+### Objectif
+Générer un CV moderne et téléchargeable en PDF depuis le portfolio, inspiré de l'ancien CV Photoshop mais mis à jour avec les expériences 2026 et le nouveau stack.
+
+### Approche technique retenue
+Page `/cv` dédiée avec CSS `@media print` — le navigateur génère le PDF via Ctrl+P / bouton "Télécharger". Pas de dépendance externe, toujours à jour.
+
+### Contenu mis à jour (2026 vs 2024)
+
+| Section | Ancien (2024) | Nouveau (2026) |
+|---|---|---|
+| Titre | Analyste Programmeur | Développeur Full-Stack & Fondateur OREBTECH |
+| Stack | PHP Laravel, Flutter, VueJS | Next.js, ASP.NET Core, IA générative, n8n |
+| Expériences | SIMPLE IT, DRC TECH, WAOUH MONDE, CULTURE WEB | + OREBTECH (fondateur), Studio Inpulsion, SimpleIT, CultureWeb |
+| Projets | — | GestiPro, Juridixio, Wotelo, Goshen |
+| IA | — | OpenAI GPT-4, Claude API, LangChain, RAG |
+| DevOps | Git, Word, Excel | Docker, Vercel, CI/CD |
+
+### Tâches
+
+| # | Tâche | Fichier(s) | Effort | Statut |
+|---|---|---|---|---|
+| CV.1 | Page `/cv` avec layout sidebar + print CSS | `app/cv/page.tsx` | 2h | `[x]` |
+| CV.2 | Bouton print client | `app/cv/_print-button.tsx` | 10 min | `[x]` |
+| CV.3 | Mise à jour `CVDownloadButton.tsx` | `app/_components/CVDownloadButton.tsx` | 5 min | `[x]` |
+| CV.4 | Réactivation bouton CV dans Hero | `app/_components/Hero.tsx` | 5 min | `[x]` |
+| CV.5 | Design sidebar sombre + couleurs brand | `app/cv/page.tsx` | inclus CV.1 | `[x]` |
+| CV.6 | Contenu actualisé 2026 | `app/cv/page.tsx` | inclus CV.1 | `[x]` |
 
 ---
 
