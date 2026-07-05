@@ -45,15 +45,7 @@ const EXPERIENCES = [
     bullets: [
       "Développement d'applications Web & Mobile en Full Stack JS",
       "Conseil et architecture de solutions techniques sur mesure",
-    ],
-  },
-  {
-    company: "Juridixio",
-    role: "Développeur FullStack & IA (Mission)",
-    period: "2024 — 2025",
-    bullets: [
-      "Refonte complète de l'interface utilisateur de la plateforme",
-      "Intégration des flows IA avancés : RAG, agents LLM, validation juridique",
+      "Développement de Juridixio : plateforme juridique IA OHADA — refonte UI, RAG, agents LLM",
     ],
   },
   {
@@ -61,7 +53,7 @@ const EXPERIENCES = [
     role: "Développeur FullStack (Mission Freelance)",
     period: "2024 — 2025",
     bullets: [
-      "Développement fullstack de solutions web clients",
+      "Développement fullstack d'une application d'expertise comptable",
     ],
   },
   {
