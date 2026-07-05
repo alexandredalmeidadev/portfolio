@@ -142,14 +142,14 @@ export const Status = () => {
                 url="https://wa.me/2290196007981"
                 name="WhatsApp Business"
                 image="https://avatars.githubusercontent.com/u/43719341?v=4"
-                mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png"
+                mediumImage="/icons/whatsapp.svg"
                 description="Réponse sous 2h"
               />
               <ContactCard
                 url="https://www.linkedin.com/in/alexandre-valery-dalmeida/"
                 name="LinkedIn"
                 image="https://avatars.githubusercontent.com/u/43719341?v=4"
-                mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
+                mediumImage="/icons/linkedin.svg"
                 description="Professional Network"
               />
             </div>
