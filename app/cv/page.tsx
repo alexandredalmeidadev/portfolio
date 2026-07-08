@@ -127,6 +127,7 @@ const SKILLS = [
   { label: "IA & Automatisation", value: "OpenAI GPT-4, Claude API, LangChain, RAG, n8n" },
   { label: "Bases de données", value: "PostgreSQL, SQL Server, MySQL, Prisma, Firebase" },
   { label: "DevOps", value: "Docker, Vercel, Git, CI/CD" },
+  { label: "Bureautique", value: "Word (avancé), Excel (avancé), PowerPoint (avancé), LaTeX (avancé)" },
   { label: "Langues", value: "Français (natif), Anglais (professionnel), Fon (natif)" },
 ];
 
@@ -136,10 +137,10 @@ export default function CVPage() {
       <style>{`
         @media print {
           @page { size: A4; margin: 15mm 20mm; }
-          body { -webkit-print-color-adjust: exact; print-color-adjust: exact; background: white !important; }
+          html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; background: white !important; height: auto !important; overflow: visible !important; }
           .no-print { display: none !important; }
-          .cv-wrapper { background: white !important; padding: 0 !important; min-height: auto !important; }
-          .cv-doc { box-shadow: none !important; max-width: 100% !important; padding: 0 !important; }
+          .cv-wrapper { background: white !important; padding: 0 !important; min-height: auto !important; height: auto !important; overflow: visible !important; }
+          .cv-doc { box-shadow: none !important; max-width: 100% !important; width: 100% !important; padding: 0 !important; height: auto !important; overflow: visible !important; }
         }
       `}</style>
 
@@ -297,6 +298,24 @@ export default function CVPage() {
                 ))}
               </tbody>
             </table>
+          </CvSection>
+
+          {/* ENGAGEMENT BÉNÉVOLE */}
+          <CvSection title="Engagement bénévole &amp; Leadership">
+            <div style={{ breakInside: "avoid" }}>
+              <h3 className="text-sm font-bold text-gray-900">
+                Église Vases d&apos;Honneur Calavi — Assemblée Intimes de Christ
+              </h3>
+              <p style={{ color: TEAL }} className="text-xs font-medium mb-0.5">
+                Responsable Communication · Juil. 2023 — Présent
+              </p>
+              <div className="flex items-start gap-2">
+                <span style={{ color: NAVY }} className="shrink-0 text-xs leading-5">■</span>
+                <span className="text-sm text-gray-700">
+                  Gestion de la communication interne et externe de l&apos;assemblée, animation des réseaux sociaux et création de supports visuels
+                </span>
+              </div>
+            </div>
           </CvSection>
 
           {/* CENTRES D'INTÉRÊT */}
