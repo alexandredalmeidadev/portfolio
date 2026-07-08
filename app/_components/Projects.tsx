@@ -2,7 +2,7 @@
 
 import { Section } from "./Section";
 import { SideProject, SideProjectProps } from "./SideProject";
-import { FolderDot, ShoppingCart, Scale, Building2, Tractor, Receipt } from "lucide-react";
+import { FolderDot, ShoppingCart, Scale, Building2, Tractor } from "lucide-react";
 import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
 
 export const Projects = () => {
@@ -36,7 +36,7 @@ export const Projects = () => {
 
 const SIDE_PROJECTS: SideProjectProps[] = [
   {
-    Logo: Receipt,
+    logoImage: "/logos/facuro.png",
     title: "Facuro",
     description: "microSaaS de devis & facturation pour artisans et freelances : création de devis, proforma, factures PDF & suivi clients — Next.js, Prisma, PostgreSQL",
     url: "https://facuro-web.vercel.app/",

@@ -2,6 +2,7 @@
 
 import { LucideIcon, ArrowUpRight, BookOpen } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Tooltip,
   TooltipContent,
@@ -10,7 +11,8 @@ import {
 } from "@/components/ui/tooltip";
 
 export type SideProjectProps = {
-  Logo: LucideIcon;
+  Logo?: LucideIcon;
+  logoImage?: string;
   title: string;
   description: string;
   url: string;
@@ -22,8 +24,12 @@ export const SideProject = (props: SideProjectProps) => {
   const cardContent = (
     <div className="flex flex-col gap-4 p-5 rounded-3xl bg-white border border-border hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5 transition-all duration-500 group h-full">
       <div className="flex items-start gap-4">
-        <span className="w-12 h-12 flex items-center justify-center rounded-2xl bg-muted text-muted-foreground group-hover:bg-primary/10 group-hover:text-primary transition-all duration-500 shrink-0">
-          <props.Logo size={24} />
+        <span className="w-12 h-12 flex items-center justify-center rounded-2xl bg-muted text-muted-foreground group-hover:bg-primary/10 group-hover:text-primary transition-all duration-500 shrink-0 overflow-hidden">
+          {props.logoImage ? (
+            <Image src={props.logoImage} alt={props.title} width={40} height={40} className="object-contain" />
+          ) : props.Logo ? (
+            <props.Logo size={24} />
+          ) : null}
         </span>
         <div className="flex-1 min-w-0">
           <h4 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300">
