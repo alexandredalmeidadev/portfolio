@@ -29,7 +29,6 @@ const EXPERIENCES = [
     period: "Janv. 2026 — Présent",
     bullets: [
       "Développement d'applications Web & Mobile en Full Stack JS",
-      "Conseil et architecture de solutions techniques sur mesure",
       "Développement de Juridixio : plateforme juridique IA OHADA — refonte UI, RAG, agents LLM",
     ],
   },
