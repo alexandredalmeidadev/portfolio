@@ -15,6 +15,30 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
+    slug: "facuro",
+    title: "Facuro",
+    description: "microSaaS de devis & facturation pour artisans et freelances : création de devis, proforma, factures PDF & suivi clients — Next.js, Prisma, PostgreSQL",
+    longDescription: [
+      "Facuro est un microSaaS de devis et facturation conçu pour les artisans, freelances et petites entreprises d'Afrique de l'Ouest. L'objectif : offrir un outil simple, rapide et professionnel pour créer des devis et factures en FCFA, sans friction comptable.",
+      "La plateforme couvre l'intégralité du cycle commercial : création de devis (et proforma), conversion en facture, génération de PDF personnalisés, gestion du carnet clients et catalogue de services. Un tableau de bord avec indicateurs clés (CA, devis en attente, factures impayées) donne une vision claire de l'activité.",
+      "L'architecture multi-tenant garantit une isolation stricte des données par entreprise. Le système de numérotation atomique évite les doublons même sous charge, et NextAuth.js assure une authentification sécurisée avec gestion des rôles ARTISAN / ADMIN.",
+    ],
+    stack: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "NextAuth.js", "@react-pdf/renderer", "Recharts", "Vercel"],
+    url: "https://facuro-web.vercel.app/",
+    category: "microSaaS",
+    color: "from-indigo-600 to-blue-500",
+    accentColor: "text-indigo-600",
+    features: [
+      "Création de devis, proforma et factures en quelques clics",
+      "Génération de PDF professionnels personnalisés à l'entête entreprise",
+      "Gestion du carnet clients et catalogue de services",
+      "Tableau de bord : CA, taux de conversion devis→facture, impayés",
+      "Architecture multi-tenant — données isolées par entreprise",
+      "Numérotation atomique des documents (DEV-001, FAC-001, PRO-001)",
+    ],
+    year: "2026",
+  },
+  {
     slug: "gestipro",
     title: "GestiPro",
     description: "SaaS de gestion commerciale sur-mesure : ventes, stocks, caisse & facturation — Next.js, Prisma, PostgreSQL",
