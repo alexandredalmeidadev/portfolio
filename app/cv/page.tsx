@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { PrintButton } from "./_print-button";
-import { Mail, Phone, MapPin, Globe, Linkedin, Github } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "CV — Alexandre d'ALMEIDA • Développeur Full-Stack Next.js & IA",
@@ -10,22 +9,8 @@ export const metadata: Metadata = {
     "Curriculum Vitae d'Alexandre d'ALMEIDA, Développeur Full-Stack spécialisé Next.js, ASP.NET Core et IA. Fondateur d'OREBTECH. 7 ans d'expérience.",
 };
 
-const CONTACT = [
-  { Icon: Mail, text: "alexandrepvdalmeida@gmail.com" },
-  { Icon: Phone, text: "+229 0196007981" },
-  { Icon: MapPin, text: "Bénin — Disponible en remote" },
-  { Icon: Globe, text: "alexandredalmeida.vercel.app" },
-  { Icon: Linkedin, text: "alexandre-dalmeida-495277121" },
-  { Icon: Github, text: "alexandredalmeidadev" },
-];
-
-const SKILLS = [
-  { category: "Frontend", items: ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML5/CSS3"] },
-  { category: "Backend", items: ["ASP.NET Core", "C#", "Node.js", "PHP Laravel"] },
-  { category: "IA & Automatisation", items: ["OpenAI GPT-4", "Claude API", "LangChain", "RAG", "n8n"] },
-  { category: "Bases de données", items: ["PostgreSQL", "SQL Server", "MySQL", "Prisma", "Firebase"] },
-  { category: "DevOps", items: ["Docker", "Vercel", "Git", "CI/CD"] },
-];
+const NAVY = "#1c2d45";
+const TEAL = "#1a7090";
 
 const EXPERIENCES = [
   {
@@ -50,7 +35,7 @@ const EXPERIENCES = [
   },
   {
     company: "CultureWeb",
-    role: "Développeur FullStack (Mission Freelance)",
+    role: "Développeur FullStack — Mission Freelance",
     period: "2024 — 2025",
     bullets: [
       "Développement fullstack d'une application d'expertise comptable",
@@ -65,37 +50,85 @@ const EXPERIENCES = [
       "Conception de modules ERP et reporting métier",
     ],
   },
-];
-
-const OLDER_EXP = [
-  { company: "WAOUH MONDE", role: "Développeur Laravel", period: "Nov. 2022 — Mai 2023" },
-  { company: "DRC TECH", role: "Développeur Laravel & Flutter", period: "Juil. — Oct. 2023" },
-  { company: "Culture Web", role: "Analyste Programmeur .NET (Stage)", period: "2020 — 2021" },
+  {
+    company: "DRC TECH",
+    role: "Développeur Laravel & Flutter",
+    period: "Juil. — Oct. 2023",
+    bullets: [
+      "Conception de sites et applications web (SynergiePlus - FlammeRencontre)",
+      "Conception d'application mobile (SynergiePlus)",
+    ],
+  },
+  {
+    company: "WAOUH MONDE",
+    role: "Développeur Laravel",
+    period: "Nov. 2022 — Mai 2023",
+    bullets: [
+      "Conception d'une application web (CLEVA)",
+      "Sécurisation de sites WordPress",
+    ],
+  },
+  {
+    company: "CULTURE WEB",
+    role: "Analyste Programmeur .NET — Stage professionnel",
+    period: "2020 — 2021",
+    bullets: [
+      "Conception d'application de normalisation des factures de la SCB — Société de Cimenterie du Bénin",
+      "Conception d'application de normalisation des factures de BOLLORE Bénin",
+      "Création et gestion de Base De Donnée My-SQL et Microsoft SQL Server",
+      "Rédaction des manuels utilisateurs à l'aide de Word et PowerPoint",
+    ],
+  },
 ];
 
 const PROJECTS = [
-  { name: "GestiPro", desc: "SaaS de gestion commerciale", stack: "Next.js · Prisma · PostgreSQL" },
-  { name: "Juridixio", desc: "Plateforme juridique IA OHADA", stack: "RAG · LangChain · OpenAI", url: "juridixio.com" },
-  { name: "Wotelo", desc: "SaaS hôtelier multi-tenant", stack: "Next.js · ASP.NET Core" },
-  { name: "Goshen", desc: "SaaS agricole automatisé", stack: "C# ASP.NET · n8n" },
+  {
+    name: "GestiPro",
+    desc: "SaaS de gestion commerciale multi-modules",
+    stack: "Next.js · Prisma · PostgreSQL",
+  },
+  {
+    name: "Juridixio",
+    desc: "Plateforme juridique IA OHADA (juridixio.com)",
+    stack: "RAG · LangChain · OpenAI · Next.js",
+  },
+  {
+    name: "Wotelo",
+    desc: "SaaS hôtelier multi-tenant",
+    stack: "Next.js · ASP.NET Core · PostgreSQL",
+  },
+  {
+    name: "Goshen",
+    desc: "SaaS agricole automatisé",
+    stack: "C# ASP.NET · n8n · PostgreSQL",
+  },
 ];
 
 const EDUCATION = [
-  { school: "IFRI", degree: "Licence en Système d'Information et Réseau Informatique" },
-  { school: "ENEAM", degree: "BTS en Informatique de Gestion" },
-  { school: "CSGA", degree: "Baccalauréat série C" },
+  {
+    code: "IFRI",
+    full: "Institut de Formation et de Recherche en Informatique",
+    degree: "Licence professionnelle en Système d'Information et Réseau Informatique",
+  },
+  {
+    code: "ENEAM",
+    full: "Ecole Nationale d'Economie Appliquée et de Management",
+    degree: "Brevet de Technicien Supérieur (BTS) en Informatique de Gestion",
+  },
+  {
+    code: "CSGA",
+    full: "Complexe Scolaire la Grande Académie",
+    degree: "Baccalauréat série C",
+  },
 ];
 
-const LANGUAGES = [
-  { lang: "Français", level: "Natif" },
-  { lang: "Anglais", level: "Professionnel" },
-  { lang: "Fon", level: "Natif" },
-];
-
-const INTERESTS = [
-  "🎤 Club Toasmasters Galaxie (Secrétaire 2022-2023)",
-  "🥋 Taekwondo — Ceinture Noire 1er Dan",
-  "🧘 Tai-chi",
+const SKILLS = [
+  { label: "Frontend", value: "Next.js, React, TypeScript, Tailwind CSS, HTML5/CSS3" },
+  { label: "Backend", value: "ASP.NET Core, C#, Node.js, PHP Laravel" },
+  { label: "IA & Automatisation", value: "OpenAI GPT-4, Claude API, LangChain, RAG, n8n" },
+  { label: "Bases de données", value: "PostgreSQL, SQL Server, MySQL, Prisma, Firebase" },
+  { label: "DevOps", value: "Docker, Vercel, Git, CI/CD" },
+  { label: "Langues", value: "Français (natif), Anglais (professionnel), Fon (natif)" },
 ];
 
 export default function CVPage() {
@@ -103,9 +136,11 @@ export default function CVPage() {
     <>
       <style>{`
         @media print {
-          @page { size: A4; margin: 0; }
-          body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+          @page { size: A4; margin: 15mm 20mm; }
+          body { -webkit-print-color-adjust: exact; print-color-adjust: exact; background: white !important; }
           .no-print { display: none !important; }
+          .cv-wrapper { background: white !important; padding: 0 !important; min-height: auto !important; }
+          .cv-doc { box-shadow: none !important; max-width: 100% !important; padding: 0 !important; }
         }
       `}</style>
 
@@ -123,214 +158,208 @@ export default function CVPage() {
         </div>
       </div>
 
-      {/* Page CV */}
-      <div className="no-print:bg-zinc-200 no-print:py-8 no-print:px-4 no-print:flex no-print:justify-center print:p-0">
+      {/* Document */}
+      <div className="cv-wrapper bg-gray-300 py-10 px-4 min-h-screen">
         <div
-          className="w-full max-w-[794px] bg-white no-print:shadow-2xl flex"
-          style={{ minHeight: "1123px" }}
+          className="cv-doc mx-auto bg-white shadow-2xl"
+          style={{ maxWidth: "794px", padding: "40px 60px" }}
         >
-          {/* ── SIDEBAR ── */}
-          <div
-            className="w-[32%] flex flex-col gap-5 p-7 text-white"
-            style={{
-              backgroundColor: "#1e1b4b",
-              WebkitPrintColorAdjust: "exact",
-              printColorAdjust: "exact",
-            } as React.CSSProperties}
-          >
-            {/* Photo + nom */}
-            <div className="flex flex-col items-center gap-3 text-center">
-              <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-purple-400 ring-2 ring-purple-400/30 shrink-0">
+          {/* HEADER */}
+          <div className="flex items-center gap-5 mb-8">
+            <div style={{ backgroundColor: NAVY }} className="px-5 py-2">
+              <span className="text-white font-bold text-xl tracking-widest">CV</span>
+            </div>
+            <h1 style={{ color: TEAL }} className="text-2xl font-bold tracking-wide">
+              Alexandre d&apos;ALMEIDA
+            </h1>
+          </div>
+
+          {/* INFORMATIONS PERSONNELLES */}
+          <CvSection title="Informations personnelles">
+            <div className="flex gap-8 items-start">
+              <table className="flex-1 text-sm">
+                <tbody>
+                  <InfoRow label="Nom" value="D'ALMEIDA Alexandre Prince Valery" />
+                  <InfoRow label="Adresse e-mail" value="alexandrepvdalmeida@gmail.com" />
+                  <InfoRow label="Contact" value="+229 0196007981" />
+                  <InfoRow label="Adresse" value="Bénin — Disponible en remote" />
+                  <InfoRow label="Site web" value="alexandredalmeida.vercel.app" />
+                  <InfoRow label="LinkedIn" value="alexandre-dalmeida-495277121" />
+                  <InfoRow label="GitHub" value="alexandredalmeidadev" />
+                </tbody>
+              </table>
+              <div className="shrink-0">
                 <Image
                   src="https://avatars.githubusercontent.com/u/43719341?v=4"
                   alt="Alexandre d'ALMEIDA"
-                  width={80}
-                  height={80}
-                  className="object-cover w-full h-full"
+                  width={100}
+                  height={120}
+                  className="object-cover border border-gray-200"
                 />
               </div>
-              <div>
-                <h1 className="text-base font-black leading-tight tracking-tight">
-                  Alexandre<br />d&apos;ALMEIDA
-                </h1>
-                <p className="text-purple-300 text-[10px] font-bold mt-1 leading-snug">
-                  Développeur Full-Stack<br />&amp; Fondateur OREBTECH
-                </p>
-              </div>
             </div>
+          </CvSection>
 
-            <Divider />
+          {/* PROFIL */}
+          <CvSection title="Profil">
+            <p className="text-sm text-gray-700 leading-relaxed">
+              Développeur Full-Stack avec <strong>7 ans d&apos;expérience</strong> en conception de SaaS
+              performants et d&apos;applications métier. Expert <strong>Next.js</strong>,{" "}
+              <strong>ASP.NET Core</strong> et intégration d&apos;<strong>IA générative</strong> (OpenAI,
+              Claude API, LangChain, RAG). Fondateur d&apos;<strong>OREBTECH</strong>, un studio de
+              développement de produits digitaux à fort ROI. Basé au Bénin, disponible en remote pour
+              des clients internationaux.
+            </p>
+          </CvSection>
 
-            {/* Contact */}
-            <SideSection title="Contact">
-              <div className="flex flex-col gap-1.5">
-                {CONTACT.map(({ Icon, text }) => (
-                  <div key={text} className="flex items-start gap-2">
-                    <Icon size={10} className="text-purple-400 mt-0.5 shrink-0" />
-                    <span className="text-[9px] text-zinc-300 leading-tight break-all">{text}</span>
-                  </div>
-                ))}
-              </div>
-            </SideSection>
-
-            <Divider />
-
-            {/* Compétences */}
-            <SideSection title="Compétences">
-              <div className="flex flex-col gap-2.5">
-                {SKILLS.map(({ category, items }) => (
-                  <div key={category}>
-                    <span className="text-[8px] font-black uppercase text-purple-300 tracking-wider block mb-1">
-                      {category}
+          {/* EXPÉRIENCES */}
+          <CvSection title="Expériences professionnelles">
+            <div className="flex flex-col gap-3">
+              {EXPERIENCES.map(({ company, role, period, bullets }) => (
+                <div key={company} style={{ breakInside: "avoid" }}>
+                  <p className="text-sm">
+                    <strong className="text-gray-900">{company}</strong>
+                    <span style={{ color: TEAL }} className="text-xs font-medium">
+                      {" "}
+                      - {role} ({period})
                     </span>
-                    <div className="flex flex-wrap gap-1">
-                      {items.map((item) => (
-                        <span
-                          key={item}
-                          className="text-[8px] px-1.5 py-0.5 rounded border border-purple-700/50 text-zinc-200"
-                          style={{ backgroundColor: "rgba(88,28,135,0.3)" }}
-                        >
-                          {item}
+                  </p>
+                  <ul className="mt-0.5">
+                    {bullets.map((b) => (
+                      <li key={b} className="flex items-start gap-2 text-sm text-gray-700 leading-snug">
+                        <span style={{ color: NAVY }} className="shrink-0 mt-0.5 text-xs leading-5">
+                          ■
                         </span>
-                      ))}
-                    </div>
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </CvSection>
+
+          {/* PROJETS PHARES */}
+          <CvSection title="Projets Phares">
+            <div className="flex flex-col gap-1.5">
+              {PROJECTS.map(({ name, desc, stack }) => (
+                <div key={name} className="flex items-start gap-2 text-sm" style={{ breakInside: "avoid" }}>
+                  <span style={{ color: NAVY }} className="shrink-0 mt-0.5 text-xs leading-5">
+                    ■
+                  </span>
+                  <span className="text-gray-700">
+                    <strong className="text-gray-900">{name}</strong>
+                    <span style={{ color: TEAL }}> — {desc}</span>
+                    <span className="text-gray-400 text-xs"> · {stack}</span>
+                  </span>
+                </div>
+              ))}
+            </div>
+          </CvSection>
+
+          {/* FORMATION */}
+          <CvSection title="Etudes et Diplômes">
+            <div className="flex flex-col gap-3">
+              {EDUCATION.map(({ code, full, degree }) => (
+                <div key={code} style={{ breakInside: "avoid" }}>
+                  <h3 className="text-sm font-bold text-gray-900">
+                    {code} - {full}
+                  </h3>
+                  <div className="flex items-start gap-2 mt-0.5">
+                    <span style={{ color: NAVY }} className="shrink-0 text-xs leading-5">
+                      ■
+                    </span>
+                    <span className="text-sm text-gray-700">{degree}</span>
                   </div>
-                ))}
-              </div>
-            </SideSection>
+                </div>
+              ))}
+            </div>
+          </CvSection>
 
-            <Divider />
-
-            {/* Langues */}
-            <SideSection title="Langues">
-              <div className="flex flex-col gap-1">
-                {LANGUAGES.map(({ lang, level }) => (
-                  <div key={lang} className="flex items-center justify-between">
-                    <span className="text-[10px] font-bold text-zinc-200">{lang}</span>
-                    <span className="text-[9px] text-purple-300">{level}</span>
-                  </div>
-                ))}
-              </div>
-            </SideSection>
-
-            <Divider />
-
-            {/* Intérêts */}
-            <SideSection title="Intérêts">
-              <div className="flex flex-col gap-1">
-                {INTERESTS.map((item) => (
-                  <span key={item} className="text-[9px] text-zinc-300 leading-snug">{item}</span>
-                ))}
-              </div>
-            </SideSection>
-          </div>
-
-          {/* ── MAIN CONTENT ── */}
-          <div className="flex-1 p-7 flex flex-col gap-5">
-
-            {/* Profil */}
-            <MainSection title="Profil">
-              <p className="text-zinc-600 text-[11px] leading-relaxed">
-                Développeur Full-Stack avec <strong>7 ans d&apos;expérience</strong> en conception de SaaS performants. Expert{" "}
-                <strong>Next.js</strong>, <strong>ASP.NET Core</strong> et intégration d&apos;<strong>IA générative</strong>.
-                Fondateur d&apos;<strong>OREBTECH</strong>, un studio de développement de produits digitaux à fort ROI.
-                Basé au Bénin, disponible en remote pour des clients internationaux.
-              </p>
-            </MainSection>
-
-            {/* Expériences */}
-            <MainSection title="Expériences Professionnelles">
-              <div className="flex flex-col gap-3.5">
-                {EXPERIENCES.map(({ company, role, period, bullets }) => (
-                  <div key={company}>
-                    <div className="flex items-start justify-between gap-2 mb-1">
-                      <div>
-                        <span className="text-[11px] font-black text-zinc-900">{company}</span>
-                        <span className="text-[10px] text-purple-700 font-bold"> — {role}</span>
-                      </div>
-                      <span className="text-[9px] font-bold text-zinc-400 whitespace-nowrap shrink-0">{period}</span>
-                    </div>
-                    <ul className="flex flex-col gap-0.5">
-                      {bullets.map((b) => (
-                        <li key={b} className="text-[10px] text-zinc-600 flex items-start gap-1.5">
-                          <span className="text-purple-500 mt-0.5 shrink-0">▪</span>
-                          {b}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-
-                {/* Expériences condensées */}
-                <div className="flex flex-col gap-1 pt-1 border-t border-zinc-100">
-                  {OLDER_EXP.map(({ company, role, period }) => (
-                    <div key={company} className="flex items-center justify-between gap-2">
-                      <span className="text-[10px]">
-                        <span className="font-black text-zinc-700">{company}</span>
-                        <span className="text-zinc-500 font-medium"> — {role}</span>
+          {/* COMPÉTENCES */}
+          <CvSection title="Compétences">
+            <table className="w-full text-sm">
+              <tbody>
+                {SKILLS.map(({ label, value }) => (
+                  <tr key={label}>
+                    <td className="py-0.5 pr-1 align-top w-4">
+                      <span style={{ color: NAVY }} className="text-xs">
+                        ■
                       </span>
-                      <span className="text-[9px] text-zinc-400 whitespace-nowrap shrink-0">{period}</span>
-                    </div>
-                  ))}
+                    </td>
+                    <td
+                      style={{ color: TEAL }}
+                      className="py-0.5 pr-6 align-top font-bold whitespace-nowrap"
+                    >
+                      {label}
+                    </td>
+                    <td className="py-0.5 text-gray-700">{value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </CvSection>
+
+          {/* CENTRES D'INTÉRÊT */}
+          <CvSection title="Centres d'intérêt">
+            <div className="flex flex-col gap-3">
+              <div style={{ breakInside: "avoid" }}>
+                <h3 className="text-sm font-bold text-gray-900">
+                  Club d&apos;Art Oratoire (Galaxie Toasmasters)
+                </h3>
+                <div className="flex items-start gap-2 mt-0.5">
+                  <span style={{ color: NAVY }} className="shrink-0 text-xs leading-5">
+                    ■
+                  </span>
+                  <span className="text-sm text-gray-700">
+                    Membre et Secrétaire du club Galaxie — Mandature 2022-2023
+                  </span>
                 </div>
               </div>
-            </MainSection>
-
-            {/* Projets */}
-            <MainSection title="Projets Phares">
-              <div className="grid grid-cols-2 gap-2">
-                {PROJECTS.map(({ name, desc, stack, url }) => (
-                  <div key={name} className="p-2.5 rounded-lg border border-zinc-100 bg-zinc-50">
-                    <div className="flex items-center justify-between gap-1">
-                      <span className="text-[10px] font-black text-zinc-900">{name}</span>
-                      {url && <span className="text-[8px] text-purple-600 font-medium">{url}</span>}
-                    </div>
-                    <p className="text-[9px] text-zinc-500 mt-0.5">{desc}</p>
-                    <p className="text-[9px] text-purple-600 font-semibold mt-1">{stack}</p>
-                  </div>
-                ))}
+              <div style={{ breakInside: "avoid" }}>
+                <h3 className="text-sm font-bold text-gray-900">Sport (Art Martiaux)</h3>
+                <div className="flex items-start gap-2 mt-0.5">
+                  <span style={{ color: NAVY }} className="shrink-0 text-xs leading-5">
+                    ■
+                  </span>
+                  <span className="text-sm text-gray-700">Ceinture Noire 1er Dan Taekwondo</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span style={{ color: NAVY }} className="shrink-0 text-xs leading-5">
+                    ■
+                  </span>
+                  <span className="text-sm text-gray-700">Tai-chi</span>
+                </div>
               </div>
-            </MainSection>
-
-            {/* Formation */}
-            <MainSection title="Formation">
-              <div className="flex flex-col gap-1.5">
-                {EDUCATION.map(({ school, degree }) => (
-                  <div key={school} className="flex items-start gap-3">
-                    <span className="text-[10px] font-black text-purple-700 w-12 shrink-0">{school}</span>
-                    <span className="text-[10px] text-zinc-600">{degree}</span>
-                  </div>
-                ))}
-              </div>
-            </MainSection>
-
-          </div>
+            </div>
+          </CvSection>
         </div>
       </div>
     </>
   );
 }
 
-function Divider() {
-  return <div className="border-t border-purple-700/30 w-full" />;
-}
-
-function SideSection({ title, children }: { title: string; children: React.ReactNode }) {
+function CvSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="flex flex-col gap-2">
-      <h2 className="text-[9px] font-black uppercase tracking-[0.3em] text-purple-400">{title}</h2>
+    <div className="mb-6">
+      <h2 className="text-base font-bold text-gray-800 border-b border-gray-300 pb-1 mb-3">
+        {title}
+      </h2>
       {children}
     </div>
   );
 }
 
-function MainSection({ title, children }: { title: string; children: React.ReactNode }) {
+function InfoRow({ label, value }: { label: string; value: string }) {
   return (
-    <section className="flex flex-col gap-2">
-      <h2 className="text-[10px] font-black uppercase tracking-[0.3em] text-purple-700 border-b-2 border-purple-700 pb-1">
-        {title}
-      </h2>
-      {children}
-    </section>
+    <tr>
+      <td
+        style={{ color: TEAL }}
+        className="font-semibold pr-8 py-0.5 align-top whitespace-nowrap"
+      >
+        {label}
+      </td>
+      <td className="text-gray-800 py-0.5">{value}</td>
+    </tr>
   );
 }
