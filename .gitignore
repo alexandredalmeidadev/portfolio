@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# fichiers locaux à ne jamais pousser
+/ancien_cv_pdf/
+Capture d’écran*.jpg
+Capture d'écran*.jpg
