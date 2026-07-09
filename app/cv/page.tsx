@@ -136,11 +136,11 @@ export default function CVPage() {
     <>
       <style>{`
         @media print {
-          @page { size: A4; margin: 15mm 20mm; }
+          @page { size: A4; margin: 0; }
           html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; background: white !important; height: auto !important; overflow: visible !important; }
           .no-print { display: none !important; }
           .cv-wrapper { background: white !important; padding: 0 !important; min-height: auto !important; height: auto !important; overflow: visible !important; }
-          .cv-doc { box-shadow: none !important; max-width: 100% !important; width: 100% !important; padding: 0 !important; height: auto !important; overflow: visible !important; }
+          .cv-doc { box-shadow: none !important; max-width: 100% !important; width: 100% !important; padding: 15mm 20mm !important; height: auto !important; overflow: visible !important; }
         }
       `}</style>
 
@@ -341,12 +341,6 @@ export default function CVPage() {
                     ■
                   </span>
                   <span className="text-sm text-gray-700">Ceinture Noire 1er Dan Taekwondo</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span style={{ color: NAVY }} className="shrink-0 text-xs leading-5">
-                    ■
-                  </span>
-                  <span className="text-sm text-gray-700">Tai-chi</span>
                 </div>
               </div>
             </div>
