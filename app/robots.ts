@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://alexandredalmeida.vercel.app/sitemap.xml",
+    sitemap: "https://alexandredalmeida.com/sitemap.xml",
   };
 }

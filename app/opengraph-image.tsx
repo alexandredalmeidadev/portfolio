@@ -91,7 +91,7 @@ export default function Image() {
                 Alexandre d&apos;ALMEIDA
               </span>
               <span style={{ color: "rgba(161,161,170,0.9)", fontSize: "15px", fontWeight: 600 }}>
-                alexandredalmeida.vercel.app
+                alexandredalmeida.com
               </span>
             </div>
           </div>

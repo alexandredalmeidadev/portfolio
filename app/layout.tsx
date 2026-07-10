@@ -11,7 +11,7 @@ const AnekTelugu = Anek_Telugu({
   subsets: ["latin"],
 })
 
-const SITE_URL = "https://alexandredalmeida.vercel.app";
+const SITE_URL = "https://alexandredalmeida.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
