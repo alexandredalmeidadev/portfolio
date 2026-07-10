@@ -136,11 +136,12 @@ export default function CVPage() {
     <>
       <style>{`
         @media print {
-          @page { size: A4; margin: 0; }
+          @page { size: A4; margin: 20mm 20mm; }
+          @page :first { margin-top: 15mm; }
           html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; background: white !important; height: auto !important; overflow: visible !important; }
           .no-print { display: none !important; }
           .cv-wrapper { background: white !important; padding: 0 !important; min-height: auto !important; height: auto !important; overflow: visible !important; }
-          .cv-doc { box-shadow: none !important; max-width: 100% !important; width: 100% !important; padding: 15mm 20mm !important; height: auto !important; overflow: visible !important; }
+          .cv-doc { box-shadow: none !important; max-width: 100% !important; width: 100% !important; padding: 0 !important; height: auto !important; overflow: visible !important; }
         }
       `}</style>
 
@@ -183,18 +184,18 @@ export default function CVPage() {
                   <InfoRow label="Adresse e-mail" value="alexandrepvdalmeida@gmail.com" />
                   <InfoRow label="Contact" value="+229 0196007981" />
                   <InfoRow label="Adresse" value="Bénin — Disponible en remote" />
-                  <InfoRow label="Site web" value="alexandredalmeida.com" />
+                  <InfoRow label="Site web" value="alexandredalmeida.com" href="https://alexandredalmeida.com" />
                   <InfoRow label="LinkedIn" value="alexandre-dalmeida-495277121" />
                   <InfoRow label="GitHub" value="alexandredalmeidadev" />
                 </tbody>
               </table>
               <div className="shrink-0">
                 <Image
-                  src="https://avatars.githubusercontent.com/u/43719341?v=4"
+                  src="/maphoto.jpg"
                   alt="Alexandre d'ALMEIDA"
-                  width={100}
-                  height={120}
-                  className="object-cover border border-gray-200"
+                  width={120}
+                  height={140}
+                  className="object-cover object-top border border-gray-200"
                 />
               </div>
             </div>
@@ -207,7 +208,7 @@ export default function CVPage() {
               performants et d&apos;applications métier. Expert <strong>Next.js</strong>,{" "}
               <strong>ASP.NET Core</strong> et intégration d&apos;<strong>IA générative</strong> (OpenAI,
               Claude API, LangChain, RAG). Fondateur d&apos;<strong>OREBTECH</strong>, un studio de
-              développement de produits digitaux à fort ROI. Basé au Bénin, disponible en remote pour
+              développement de produits digitaux. Basé au Bénin, disponible en remote pour
               des clients internationaux.
             </p>
           </CvSection>
@@ -312,7 +313,7 @@ export default function CVPage() {
               <div className="flex items-start gap-2">
                 <span style={{ color: NAVY }} className="shrink-0 text-xs leading-5">■</span>
                 <span className="text-sm text-gray-700">
-                  Gestion de la communication interne et externe de l&apos;assemblée, animation des réseaux sociaux et création de supports visuels
+                  Gestion de la communication interne et externe de l&apos;assemblée : animation des réseaux sociaux, création de supports visuels, sonorisation et projections
                 </span>
               </div>
             </div>
@@ -362,7 +363,7 @@ function CvSection({ title, children }: { title: string; children: React.ReactNo
   );
 }
 
-function InfoRow({ label, value }: { label: string; value: string }) {
+function InfoRow({ label, value, href }: { label: string; value: string; href?: string }) {
   return (
     <tr>
       <td
@@ -371,7 +372,13 @@ function InfoRow({ label, value }: { label: string; value: string }) {
       >
         {label}
       </td>
-      <td className="text-gray-800 py-0.5">{value}</td>
+      <td className="text-gray-800 py-0.5">
+        {href ? (
+          <a href={href} style={{ color: TEAL }} className="underline">
+            {value}
+          </a>
+        ) : value}
+      </td>
     </tr>
   );
 }
