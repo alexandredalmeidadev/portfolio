@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { PrintButton } from "./_print-button";
 
@@ -190,12 +189,14 @@ export default function CVPage() {
                 </tbody>
               </table>
               <div className="shrink-0">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src="/maphoto.jpg"
                   alt="Alexandre d'ALMEIDA"
                   width={120}
                   height={140}
                   className="object-cover object-top border border-gray-200"
+                  style={{ display: "block" }}
                 />
               </div>
             </div>
