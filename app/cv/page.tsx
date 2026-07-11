@@ -369,11 +369,11 @@ function InfoRow({ label, value, href }: { label: string; value: string; href?: 
     <tr>
       <td
         style={{ color: TEAL }}
-        className="font-semibold pr-8 py-0.5 align-top whitespace-nowrap"
+        className="font-semibold pr-4 sm:pr-8 py-0.5 align-top whitespace-nowrap"
       >
         {label}
       </td>
-      <td className="text-gray-800 py-0.5">
+      <td className="text-gray-800 py-0.5 break-words">
         {href ? (
           <a href={href} style={{ color: TEAL }} className="underline">
             {value}
