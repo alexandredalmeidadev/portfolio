@@ -161,8 +161,8 @@ export default function CVPage() {
       {/* Document */}
       <div className="cv-wrapper bg-gray-300 py-10 px-4 min-h-screen">
         <div
-          className="cv-doc mx-auto bg-white shadow-2xl"
-          style={{ maxWidth: "794px", padding: "40px 60px" }}
+          className="cv-doc mx-auto bg-white shadow-2xl w-full px-5 py-8 sm:px-10 sm:py-10 md:px-[60px]"
+          style={{ maxWidth: "794px" }}
         >
           {/* HEADER */}
           <div className="flex items-center gap-5 mb-8">
@@ -176,8 +176,8 @@ export default function CVPage() {
 
           {/* INFORMATIONS PERSONNELLES */}
           <CvSection title="Informations personnelles">
-            <div className="flex gap-8 items-start">
-              <table className="flex-1 text-sm">
+            <div className="flex flex-col-reverse sm:flex-row gap-4 sm:gap-8 items-start">
+              <table className="flex-1 w-full text-sm">
                 <tbody>
                   <InfoRow label="Nom" value="D'ALMEIDA Alexandre Prince Valery" />
                   <InfoRow label="Adresse e-mail" value="alexandrepvdalmeida@gmail.com" />
@@ -188,7 +188,7 @@ export default function CVPage() {
                   <InfoRow label="GitHub" value="alexandredalmeidadev" />
                 </tbody>
               </table>
-              <div className="shrink-0">
+              <div className="shrink-0 mx-auto sm:mx-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/maphoto.jpg"
@@ -291,7 +291,7 @@ export default function CVPage() {
                     </td>
                     <td
                       style={{ color: TEAL }}
-                      className="py-0.5 pr-6 align-top font-bold whitespace-nowrap"
+                      className="py-0.5 pr-2 sm:pr-6 align-top font-bold sm:whitespace-nowrap"
                     >
                       {label}
                     </td>
