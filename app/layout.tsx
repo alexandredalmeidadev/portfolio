@@ -11,7 +11,7 @@ const AnekTelugu = Anek_Telugu({
   subsets: ["latin"],
 })
 
-const SITE_URL = "https://alexandredalmeida.com";
+const SITE_URL = "https://www.alexandredalmeida.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

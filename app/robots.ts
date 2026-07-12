@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://alexandredalmeida.com/sitemap.xml",
+    sitemap: "https://www.alexandredalmeida.com/sitemap.xml",
   };
 }
