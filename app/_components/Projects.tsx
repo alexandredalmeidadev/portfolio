@@ -43,11 +43,11 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     internalUrl: "/projects/facuro",
   },
   {
-    Logo: ShoppingCart,
-    title: "GestiPro",
-    description: "SaaS de gestion commerciale sur-mesure : ventes, stocks, caisse & facturation — Next.js, Prisma, PostgreSQL",
-    url: "https://gestipro-omega.vercel.app/",
-    internalUrl: "/projects/gestipro",
+    logoImage: "/logos/kaxaya.png",
+    title: "Kaxaya",
+    description: "SaaS de gestion comptable pour PME : ventes, stocks, caisse, Mobile Money & bot WhatsApp intelligent — Next.js, Prisma, PostgreSQL",
+    url: "https://kaxaya-web.vercel.app/",
+    internalUrl: "/projects/kaxaya",
   },
   {
     Logo: Scale,
@@ -63,6 +63,13 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     description: "SaaS de gestion hôtelière multi-tenant : réservations, chambres & appartements meublés — Next.js, ASP.NET Core",
     url: "https://wotelo.vercel.app/",
     internalUrl: "/projects/wotelo",
+  },
+  {
+    Logo: ShoppingCart,
+    title: "GestiPro",
+    description: "SaaS de gestion commerciale sur-mesure : ventes, stocks, caisse & facturation — Next.js, Prisma, PostgreSQL",
+    url: "https://gestipro-omega.vercel.app/",
+    internalUrl: "/projects/gestipro",
   },
   {
     Logo: Tractor,
