@@ -135,30 +135,31 @@ export const PROJECTS: Project[] = [
     ],
     year: "2024",
   },
-  {
-    slug: "goshen",
-    title: "Goshen",
-    description: "SaaS de gestion agricole automatisé : cultures, stocks & rapports — C# ASP.NET Core, n8n, automatisation des flux",
-    longDescription: [
-      "Goshen est un SaaS de gestion agricole développé pour moderniser le suivi des exploitations agricoles en Afrique de l'Ouest. Il permet aux agriculteurs et coopératives de suivre leurs cultures, gérer leurs intrants et stocks, et automatiser leurs rapports de production.",
-      "L'une des fonctionnalités clés est le moteur d'automatisation basé sur n8n : des workflows se déclenchent automatiquement selon les stades de culture (semis, croissance, récolte) pour envoyer des alertes, générer des rapports hebdomadaires et synchroniser les données avec des partenaires externes.",
-      "Le backend en C# ASP.NET Core offre une API robuste et typée, pensée pour fonctionner même en conditions de connectivité limitée grâce à un système de synchronisation optimisée des données."
-    ],
-    stack: ["C# ASP.NET Core", ".NET", "SQL Server", "n8n", "React", "TypeScript", "Docker"],
-    url: "https://alexandrepv-001-site1.rtempurl.com",
-    category: "Automatisation",
-    color: "from-amber-500 to-orange-500",
-    accentColor: "text-amber-600",
-    features: [
-      "Suivi des cultures par parcelle avec historique complet",
-      "Gestion des intrants, semences et stocks d'équipement",
-      "Workflows automatisés n8n : alertes, rapports, synchronisation",
-      "Rapports de production hebdomadaires générés automatiquement",
-      "API REST ASP.NET Core optimisée pour connectivité limitée",
-      "Tableau de bord de rendement par saison et par culture",
-    ],
-    year: "2025",
-  },
+  // Goshen désactivé temporairement : hébergement ASP.NET (rtempurl) hors service, reprise prévue en Next.js
+  // {
+  //   slug: "goshen",
+  //   title: "Goshen",
+  //   description: "SaaS de gestion agricole automatisé : cultures, stocks & rapports — C# ASP.NET Core, n8n, automatisation des flux",
+  //   longDescription: [
+  //     "Goshen est un SaaS de gestion agricole développé pour moderniser le suivi des exploitations agricoles en Afrique de l'Ouest. Il permet aux agriculteurs et coopératives de suivre leurs cultures, gérer leurs intrants et stocks, et automatiser leurs rapports de production.",
+  //     "L'une des fonctionnalités clés est le moteur d'automatisation basé sur n8n : des workflows se déclenchent automatiquement selon les stades de culture (semis, croissance, récolte) pour envoyer des alertes, générer des rapports hebdomadaires et synchroniser les données avec des partenaires externes.",
+  //     "Le backend en C# ASP.NET Core offre une API robuste et typée, pensée pour fonctionner même en conditions de connectivité limitée grâce à un système de synchronisation optimisée des données."
+  //   ],
+  //   stack: ["C# ASP.NET Core", ".NET", "SQL Server", "n8n", "React", "TypeScript", "Docker"],
+  //   url: "https://alexandrepv-001-site1.rtempurl.com",
+  //   category: "Automatisation",
+  //   color: "from-amber-500 to-orange-500",
+  //   accentColor: "text-amber-600",
+  //   features: [
+  //     "Suivi des cultures par parcelle avec historique complet",
+  //     "Gestion des intrants, semences et stocks d'équipement",
+  //     "Workflows automatisés n8n : alertes, rapports, synchronisation",
+  //     "Rapports de production hebdomadaires générés automatiquement",
+  //     "API REST ASP.NET Core optimisée pour connectivité limitée",
+  //     "Tableau de bord de rendement par saison et par culture",
+  //   ],
+  //   year: "2025",
+  // },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {

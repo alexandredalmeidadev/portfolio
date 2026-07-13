@@ -2,7 +2,7 @@
 
 import { Section } from "./Section";
 import { SideProject, SideProjectProps } from "./SideProject";
-import { FolderDot, ShoppingCart, Scale, Building2, Tractor } from "lucide-react";
+import { FolderDot, ShoppingCart, Scale, Building2 } from "lucide-react";
 import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
 
 export const Projects = () => {
@@ -71,11 +71,12 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     url: "https://gestipro-omega.vercel.app/",
     internalUrl: "/projects/gestipro",
   },
-  {
-    Logo: Tractor,
-    title: "Goshen",
-    description: "SaaS de gestion agricole automatisé : cultures, stocks & rapports — C# ASP.NET Core, n8n, automatisation des flux",
-    url: "https://alexandrepv-001-site1.rtempurl.com",
-    internalUrl: "/projects/goshen",
-  },
+  // Goshen désactivé temporairement : hébergement ASP.NET (rtempurl) hors service, reprise prévue en Next.js
+  // {
+  //   Logo: Tractor,
+  //   title: "Goshen",
+  //   description: "SaaS de gestion agricole automatisé : cultures, stocks & rapports — C# ASP.NET Core, n8n, automatisation des flux",
+  //   url: "https://alexandrepv-001-site1.rtempurl.com",
+  //   internalUrl: "/projects/goshen",
+  // },
 ];
