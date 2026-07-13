@@ -183,7 +183,7 @@ export default function CVPage() {
                   <InfoRow label="Adresse e-mail" value="alexandrepvdalmeida@gmail.com" />
                   <InfoRow label="Contact" value="+229 0196007981" />
                   <InfoRow label="Adresse" value="Bénin — Disponible en remote" />
-                  <InfoRow label="Site web" value="alexandredalmeida.com" href="https://alexandredalmeida.com" />
+                  <InfoRow label="Site web" value="alexandredalmeida.com" href="https://www.alexandredalmeida.com" />
                   <InfoRow label="LinkedIn" value="alexandre-dalmeida-495277121" />
                   <InfoRow label="GitHub" value="alexandredalmeidadev" />
                 </tbody>

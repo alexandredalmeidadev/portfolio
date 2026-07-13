@@ -63,6 +63,7 @@ const jsonLd = {
       name: "Alexandre d'ALMEIDA",
       jobTitle: "Développeur Full-Stack",
       url: SITE_URL,
+      image: `${SITE_URL}/maphoto.jpg`,
       email: "alexandrepvdalmeida@gmail.com",
       sameAs: [
         "https://github.com/alexandredalmeidadev",

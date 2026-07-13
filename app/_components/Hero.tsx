@@ -58,6 +58,16 @@ export const Hero = () => {
         <div className="absolute top-6 -right-4 md:-right-20 bg-white/90 backdrop-blur-sm p-4 rounded-[1.5rem] shadow-2xl border border-white/50 flex items-center gap-2 hover:scale-105 transition-transform duration-300 cursor-default">
            <span className="text-xs md:text-sm font-bold text-black tracking-tight">AI Automation 🤖</span>
         </div>
+        <div className="absolute top-6 -left-4 md:-left-20 bg-white/90 backdrop-blur-sm p-3 md:p-4 rounded-[1.5rem] shadow-2xl border border-white/50 flex items-center gap-2 md:gap-3 hover:scale-105 transition-transform duration-300 cursor-default">
+           <Image
+            src="/maphoto.jpg"
+            alt="Alexandre d'ALMEIDA, développeur Full-Stack Next.js"
+            width={40}
+            height={40}
+            className="rounded-full object-cover w-8 h-8 md:w-10 md:h-10 border-2 border-white shadow-md"
+           />
+           <span className="text-xs md:text-sm font-bold text-black tracking-tight">Alexandre d&apos;ALMEIDA</span>
+        </div>
       </div>
     </Section>
   );
